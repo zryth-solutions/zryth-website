@@ -143,9 +143,11 @@ const Header = () => {
                               onClick={(e) => {
                                 e.preventDefault();
                                 navbarToggleHandler();
-                                const element = document.querySelector(menuItem.path);
-                                if (element) {
-                                  element.scrollIntoView({ behavior: 'smooth' });
+                                if (menuItem.path) {
+                                  const element = document.querySelector(menuItem.path);
+                                  if (element) {
+                                    element.scrollIntoView({ behavior: 'smooth' });
+                                  }
                                 }
                               }}
                               href={menuItem.path}
@@ -158,9 +160,11 @@ const Header = () => {
                             <Link
                               onClick={(e) => {
                                 e.preventDefault();
-                                const element = document.querySelector(menuItem.path);
-                                if (element) {
-                                  element.scrollIntoView({ behavior: 'smooth' });
+                                if (menuItem.path) {
+                                  const element = document.querySelector(menuItem.path);
+                                  if (element) {
+                                    element.scrollIntoView({ behavior: 'smooth' });
+                                  }
                                 }
                               }}
                               href={menuItem.path}
