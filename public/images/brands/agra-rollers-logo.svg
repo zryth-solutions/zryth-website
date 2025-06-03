@@ -1,0 +1,13 @@
+<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Roller/Gear icon -->
+  <g transform="translate(0, 8)">
+    <circle cx="12" cy="12" r="10" fill="none" stroke="#F59E0B" stroke-width="2"/>
+    <circle cx="12" cy="12" r="6" fill="#F59E0B"/>
+    <circle cx="12" cy="12" r="3" fill="#FEF3C7"/>
+  </g>
+  
+  <!-- Company name -->
+  <text x="28" y="26" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1F2937">
+    Agra Rollers
+  </text>
+</svg> 
