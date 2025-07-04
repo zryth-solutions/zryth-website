@@ -4,7 +4,7 @@ import projectsData from "./projectsData";
 
 const Projects = () => {
   return (
-    <section id="projects" className="bg-gray-1 pb-8 pt-20 dark:bg-dark-2 lg:pb-[70px] lg:pt-[120px]">
+    <section id="projects" className="bg-gray-1 pb-8 dark:bg-dark-2 lg:pb-[70px] lg:pt-[120px]">
       <div className="container">
         <SectionTitle
           subtitle="Our Portfolio"

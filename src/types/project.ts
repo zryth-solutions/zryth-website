@@ -2,7 +2,7 @@ import { ReactElement } from "react";
 
 export type Project = {
   id: number;
-  icon: ReactElement;
+  icon: string;
   title: string;
   paragraph: string;
   category: string;

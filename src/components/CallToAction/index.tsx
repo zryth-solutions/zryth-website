@@ -2,7 +2,12 @@ import Link from "next/link";
 
 const CallToAction = () => {
   return (
-    <section className="relative z-10 overflow-hidden bg-primary py-20 lg:py-[115px]">
+    <section 
+      className="relative z-10 overflow-hidden py-20 lg:py-[115px]"
+      style={{
+        background: 'radial-gradient(circle at 30% 40%, #3A4D73, #1A2B45)'
+      }}
+    >
       <div className="container mx-auto">
         <div className="relative overflow-hidden">
           <div className="-mx-4 flex flex-wrap items-stretch">

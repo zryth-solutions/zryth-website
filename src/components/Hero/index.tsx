@@ -6,7 +6,10 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative overflow-hidden bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]"
+        className="relative overflow-hidden pt-[120px] md:pt-[130px] lg:pt-[160px]"
+        style={{
+          background: 'radial-gradient(circle at 30% 40%, #3A4D73, #1A2B45)'
+        }}
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-center">
@@ -19,7 +22,7 @@ const Hero = () => {
                   AI-Powered Software Solutions That Transform Your Business
                 </h1>
                 <p className="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]">
-                  At Zryth, we specialize in building cutting-edge software solutions that harness the power of Artificial Intelligence to solve real-world problems across industries. From seamless CRM systems to intelligent cab booking platforms, we bring your vision to life with smart, scalable, and user-centric technology.
+                  At Zryth, we build cutting-edge AI-powered software solutions that solve real-world problems. From seamless CRM systems to intelligent cab booking platforms, we deliver smart, scalable, and user-centric technology.
                 </p>
                 <ul className="mb-10 flex flex-wrap items-center justify-center gap-5">
                   <li>
@@ -59,7 +62,7 @@ const Hero = () => {
               >
                 <div className="mt-16">
                   <Image
-                    src="/images/hero/hero-image.jpg"
+                    src="/images/hero/zryth_dashboard.png"
                     alt="Zryth AI Solutions"
                     className="mx-auto max-w-full rounded-t-xl rounded-tr-xl"
                     width={845}

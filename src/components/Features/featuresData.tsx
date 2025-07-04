@@ -25,7 +25,7 @@ const featuresData: Feature[] = [
     title: "AI-Powered Development",
     paragraph: "Building smart applications that adapt, learn, and grow with your business needs using cutting-edge AI technologies.",
     btn: "Learn More",
-    btnLink: "/#",
+    btnLink: "/#about",
   },
   {
     id: 2,
@@ -48,7 +48,7 @@ const featuresData: Feature[] = [
     title: "Custom Software Solutions",
     paragraph: "Tailored systems designed specifically for your business requirements, from CRM platforms to inventory management.",
     btn: "Learn More",
-    btnLink: "/#",
+    btnLink: "/#about",
   },
   {
     id: 3,
@@ -70,7 +70,7 @@ const featuresData: Feature[] = [
     title: "Cross-Industry Expertise",
     paragraph: "Proven experience across logistics, recruitment, travel, retail, and more with specialized solutions for each sector.",
     btn: "Learn More",
-    btnLink: "/#",
+    btnLink: "/#about",
   },
   {
     id: 4,
@@ -92,7 +92,7 @@ const featuresData: Feature[] = [
     title: "End-to-End Service",
     paragraph: "From initial concept to deployment and maintenance, we provide complete project lifecycle management.",
     btn: "Learn More",
-    btnLink: "/#",
+    btnLink: "/#about",
   },
 ];
 export default featuresData;

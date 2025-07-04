@@ -1,6 +1,13 @@
 import type { Config } from "tailwindcss";
 const colors = require('tailwindcss/colors')
 
+// Remove deprecated colors to avoid warnings
+delete colors['lightBlue'];
+delete colors['warmGray'];
+delete colors['trueGray'];
+delete colors['coolGray'];
+delete colors['blueGray'];
+
 const config: Config = {
   darkMode: "class",
   content: [
