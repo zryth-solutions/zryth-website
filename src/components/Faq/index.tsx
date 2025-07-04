@@ -16,31 +16,31 @@ const Faq = () => {
         <div className="-mx-4 mt-[60px] flex flex-wrap lg:mt-20">
           <div className="w-full px-4 lg:w-1/2">
             <SingleFaq
-              question="How to use TailGrids?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="What software solutions does Zryth develop?"
+              answer="We build custom business software, AI agents, web applications, mobile apps, and enterprise systems tailored to your specific needs and industry requirements."
             />
             <SingleFaq
-              question="How to download icons from LineIcons?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="How does your tech consultancy work?"
+              answer="We analyze your current systems, identify improvement opportunities, and provide strategic recommendations for technology stack selection and digital transformation planning."
             />
             <SingleFaq
-              question="Is GrayGrids part of UIdeck?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="What is your typical project timeline?"
+              answer="Projects typically range from 4-16 weeks depending on complexity. We follow agile methodology with regular client communication and milestone reviews."
             />
           </div>
 
           <div className="w-full px-4 lg:w-1/2">
             <SingleFaq
-              question="Can I use this template for commercial project?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="Do you provide post-launch support?"
+              answer="Yes, we offer comprehensive support including bug fixes, performance optimization, feature updates, and technical maintenance with flexible service packages available."
             />
             <SingleFaq
-              question="Do you have plan to releasing Play Pro?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="What technologies do you use?"
+              answer="We work with React, Node.js, Python, cloud platforms (AWS, Azure, GCP), databases (PostgreSQL, MongoDB), and modern AI/ML frameworks."
             />
             <SingleFaq
-              question="Where and how to host this template?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="How do you ensure software quality?"
+              answer="We implement industry-standard security practices, conduct thorough code reviews, perform comprehensive testing, and follow secure coding guidelines throughout development."
             />
           </div>
         </div>
