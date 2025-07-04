@@ -25,7 +25,7 @@ const CallToAction = () => {
                   From CRM systems to intelligent booking platforms, we turn your vision into reality.
                 </p>
                 <Link
-                  href="/contact"
+                  href="#contact"
                   className="inline-block rounded-md border border-transparent bg-secondary px-7 py-3 text-base font-medium text-white transition hover:bg-[#0BB489]"
                 >
                   Start Your Project
