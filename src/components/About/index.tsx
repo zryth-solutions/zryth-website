@@ -23,7 +23,10 @@ const About = () => {
 
                 <Link
                   href="#contact"
-                  className="inline-flex items-center justify-center rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white duration-300 hover:bg-primary/90"
+                  className="inline-flex items-center justify-center rounded-md px-7 py-3 text-center text-base font-medium text-white duration-300"
+                  style={{
+                    background: 'radial-gradient(circle at 30% 40%, #3A4D73, #1A2B45)'
+                  }}
                 >
                   Start Your Project
                 </Link>
@@ -55,7 +58,12 @@ const About = () => {
                     />
                   </div>
 
-                  <div className="relative z-10 mb-4 flex items-center justify-center overflow-hidden bg-primary px-6 py-12 sm:mb-8 sm:h-[160px] sm:p-5 lg:mb-4 xl:mb-8">
+                  <div 
+                    className="relative z-10 mb-4 flex items-center justify-center overflow-hidden px-6 py-12 sm:mb-8 sm:h-[160px] sm:p-5 lg:mb-4 xl:mb-8"
+                    style={{
+                      background: 'radial-gradient(circle at 30% 40%, #3A4D73, #1A2B45)'
+                    }}
+                  >
                     <div>
                       <span className="block text-5xl font-extrabold text-white">
                         12+

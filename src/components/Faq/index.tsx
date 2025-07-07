@@ -3,12 +3,12 @@ import SingleFaq from "./SingleFaq";
 
 const Faq = () => {
   return (
-    <section className="relative z-20 overflow-hidden bg-white pb-8 pt-20 dark:bg-dark lg:pb-[50px] lg:pt-[120px]">
+    <section id="faq" className="relative z-20 overflow-hidden bg-white pb-8 pt-20 dark:bg-dark lg:pb-[50px] lg:pt-[120px]">
       <div className="container">
         <SectionTitle
           subtitle="FAQ"
           title="Any Questions? Answered"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          paragraph="Find answers to the most commonly asked questions about our software, features, and services. If you can't find what you're looking for, feel free to reach out to our support team."
           width="640px"
           center
         />
