@@ -32,7 +32,7 @@ const Contact = () => {
   });
 
   // Replace with your actual Web3Forms access key
-  const ACCESS_KEY = "ffa2a120-c980-40b6-9b96-7733cc9724e7";
+  const ACCESS_KEY = "456de0b8-2aaa-4c99-a986-006da8918178";
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;

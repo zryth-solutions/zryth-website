@@ -139,7 +139,7 @@ const Header = () => {
                   onClick={navbarToggleHandler}
                   id="navbarToggler"
                   aria-label="Mobile Menu"
-                  className="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden z-50"
+                  className="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden z-[9997]"
                 >
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${navbarOpen ? " top-[7px] rotate-45" : " "
@@ -196,17 +196,18 @@ const Header = () => {
 
                 {/* Mobile Menu Overlay */}
                 {navbarOpen && (
-                  <div className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden" />
+                  <div className="fixed inset-0 bg-black bg-opacity-50 z-[9998] lg:hidden" />
                 )}
 
                 {/* Mobile Sliding Menu */}
                 <div
                   ref={mobileMenuRef}
-                  className={`fixed top-0 right-0 h-full w-80 bg-white dark:bg-dark-2 z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${navbarOpen ? "translate-x-0" : "translate-x-full"
+                  className={`fixed top-0 right-0 h-full w-80 bg-white dark:bg-dark-2 shadow-xl z-[9999] transform transition-transform duration-300 ease-in-out lg:hidden ${navbarOpen ? "translate-x-0" : "translate-x-full"
                     }`}
+                  style={{ backgroundColor: 'white' }}
                 >
                   {/* Mobile Menu Header */}
-                  <div className="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700">
+                  <div className="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-dark-2">
                     <Link href="/" onClick={() => setNavbarOpen(false)}>
                       <Image
                         src="/images/logo/zryth-logo-dark.svg"
@@ -248,7 +249,7 @@ const Header = () => {
                   </div>
 
                   {/* Mobile Menu Items */}
-                  <nav className="p-6">
+                  <nav className="p-6 bg-white dark:bg-dark-2 h-full overflow-y-auto">
                     <ul className="space-y-4">
                       {menuData.map((menuItem, index) =>
                         menuItem.path ? (
