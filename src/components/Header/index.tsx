@@ -78,9 +78,9 @@ const Header = () => {
   return (
     <>
       <header
-        className={`ud-header left-0 top-0 z-40 flex w-full items-center ${sticky
-          ? "shadow-nav fixed z-[999] border-b border-stroke bg-white/80 backdrop-blur-[5px] dark:border-dark-3/20 dark:bg-dark/10"
-          : "absolute bg-transparent"
+        className={`ud-header left-0 top-0 flex w-full items-center ${sticky
+          ? `shadow-nav fixed border-b border-stroke bg-white/80 backdrop-blur-[5px] dark:border-dark-3/20 dark:bg-dark/10 ${navbarOpen ? 'z-[9998]' : 'z-[999]'}`
+          : `absolute bg-transparent ${navbarOpen ? 'z-[9998]' : 'z-40'}`
           }`}
       >
         <div className="container">
@@ -196,15 +196,15 @@ const Header = () => {
 
                 {/* Mobile Menu Overlay */}
                 {navbarOpen && (
-                  <div className="fixed inset-0 bg-black bg-opacity-50 z-[9998] lg:hidden" />
+                  <div className="fixed inset-0 bg-black bg-opacity-50 z-[10000] lg:hidden" style={{ height: '100vh' }} />
                 )}
 
                 {/* Mobile Sliding Menu */}
                 <div
                   ref={mobileMenuRef}
-                  className={`fixed top-0 right-0 h-full w-80 bg-white dark:bg-dark-2 shadow-xl z-[9999] transform transition-transform duration-300 ease-in-out lg:hidden ${navbarOpen ? "translate-x-0" : "translate-x-full"
+                  className={`fixed top-0 right-0 h-screen w-80 bg-white dark:bg-dark-2 shadow-xl z-[10001] transform transition-transform duration-300 ease-in-out lg:hidden ${navbarOpen ? "translate-x-0" : "translate-x-full"
                     }`}
-                  style={{ backgroundColor: 'white' }}
+                  style={{ backgroundColor: 'white', height: '100vh' }}
                 >
                   {/* Mobile Menu Header */}
                   <div className="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-dark-2">
