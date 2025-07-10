@@ -16,15 +16,18 @@ body {
   @apply bg-dark dark:bg-white;
 }
 
-.sticky-menu #navbarCollapse li > a {
+.sticky-menu #navbarCollapse li>a {
   @apply text-dark hover:text-primary hover:opacity-100 dark:text-white;
 }
+
 #navbarCollapse li .ud-menu-scroll.active {
   @apply opacity-70;
 }
+
 .sticky-menu #navbarCollapse li .ud-menu-scroll.active {
   @apply text-primary opacity-100 dark:text-white;
 }
+
 .sticky-menu .loginBtn {
   @apply text-dark hover:text-primary hover:opacity-100 dark:text-white;
 }
@@ -33,13 +36,15 @@ body {
   @apply bg-primary hover:bg-dark text-white hover:text-white;
 }
 
-.navbarTogglerActive > span:nth-child(1) {
+.navbarTogglerActive>span:nth-child(1) {
   @apply top-[7px] rotate-45 transform;
 }
-.navbarTogglerActive > span:nth-child(2) {
+
+.navbarTogglerActive>span:nth-child(2) {
   @apply opacity-0;
 }
-.navbarTogglerActive > span:nth-child(3) {
+
+.navbarTogglerActive>span:nth-child(3) {
   @apply top-[-8px] rotate-[135deg];
 }
 
@@ -74,4 +79,27 @@ body {
 
 .blog-details h3 {
   @apply text-dark mb-6 text-2xl font-bold dark:text-white sm:text-[28px] sm:leading-[40px];
+}
+
+/* Marquee Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-25%);
+  }
+}
+
+.animate-scroll {
+  /* Speed control: Lower number = faster, Higher number = slower */
+  /* Current: 9s (very fast) | Fast: 15s | Medium: 30s | Slow: 60s */
+  animation: scroll 9s linear infinite;
+  will-change: transform;
+}
+
+/* Pause animation on hover */
+.animate-scroll:hover {
+  animation-play-state: paused;
 }

@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="mb-10 w-full">
               <Link href="/" className="mb-6 inline-block max-w-[160px]">
                 <Image
-                  src="/images/logo/zryth_logo_bg.png"
+                  src="/images/logo/zryth_logo_footer.png"
                   alt="Zryth"
                   width={140}
                   height={30}
@@ -85,7 +85,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <Link
-                    href="#"
+                    href="#home"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
                     Home
@@ -93,7 +93,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="#projects"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
                     Features
@@ -101,7 +101,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="#about"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
                     About
@@ -109,7 +109,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="#testimonials"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
                     Testimonial
@@ -126,7 +126,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <Link
-                    href="#"
+                    href="#projects"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
                     How it works
@@ -159,7 +159,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
+          {/* <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
             <div className="mb-10 w-full">
               <h4 className="mb-9 text-lg font-semibold text-white">
                 Our Products
@@ -199,7 +199,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
           <div className="w-full px-4 md:w-2/3 lg:w-6/12 xl:w-3/12">
             <div className="mb-10 w-full">
               <h4 className="mb-9 text-lg font-semibold text-white">
@@ -208,23 +208,23 @@ const Footer = () => {
               <ul>
                 <li>
                   <Link
-                    href="#"
+                    href="#faq"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
                     FAQ
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     href="#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
                     Blogs
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link
-                    href="#"
+                    href="#contact"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
                     Support
@@ -232,7 +232,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="#about"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
                     About
