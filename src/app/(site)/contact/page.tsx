@@ -1,20 +1,15 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import Contact from "@/components/Contact";
-import { Metadata } from "next";
+import { generateMetadata, pageSEOConfigs } from "@/utils/metadata";
 
-export const metadata: Metadata = {
-  title:
-    "Contact Page | Play SaaS Starter Kit and Boilerplate for Next.js",
-  description: "This is contact page description",
-};
+export const metadata = generateMetadata(pageSEOConfigs.contact);
 
 const ContactPage = () => {
   return (
-    <>
+    <main>
       <Breadcrumb pageName="Contact Page" />
-
       <Contact />
-    </>
+    </main>
   );
 };
 

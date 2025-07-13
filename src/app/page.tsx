@@ -11,12 +11,9 @@ import Projects from "@/components/Projects";
 import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
 import { getAllPosts } from "@/utils/markdown";
-import { Metadata } from "next";
+import { generateMetadata, pageSEOConfigs } from "@/utils/metadata";
 
-export const metadata: Metadata = {
-  title: "Zryth - AI-Powered Software Solutions That Transform Your Business",
-  description: "At Zryth, we specialize in building cutting-edge software solutions that harness the power of Artificial Intelligence to solve real-world problems across industries. From seamless CRM systems to intelligent cab booking platforms, we bring your vision to life.",
-};
+export const metadata = generateMetadata(pageSEOConfigs.home);
 
 export default function Home() {
   const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);

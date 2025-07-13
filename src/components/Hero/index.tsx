@@ -6,10 +6,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="relative overflow-hidden pt-[120px] md:pt-[130px] lg:pt-[160px]"
-        style={{
-          background: 'radial-gradient(circle at 30% 40%, #3A4D73, #1A2B45)'
-        }}
+        className="relative overflow-hidden bg-[#090E34] pt-[120px] md:pt-[130px] lg:pt-[160px]"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-center">
