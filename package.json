@@ -24,6 +24,7 @@
     "prisma": "^5.7.0",
     "prismjs": "^1.29.0",
     "react": "19.1.0",
+    "react-calendly": "^4.4.0",
     "react-dom": "19.1.0",
     "react-hot-toast": "^2.4.1",
     "remark": "^15.0.1",
