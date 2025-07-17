@@ -306,7 +306,8 @@ const Contact = () => {
                   <button
                     type="submit"
                     disabled={formState.isSubmitting}
-                    className="inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="inline-flex items-center justify-center rounded-md px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed"
+                    style={{ background: 'radial-gradient(circle at 30% 40%, #3A4D73, #1A2B45)' }}
                   >
                     {formState.isSubmitting ? (
                       <>

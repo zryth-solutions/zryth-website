@@ -17,7 +17,7 @@ const CalendlyInline: React.FC<CalendlyInlineProps> = ({
     className = ''
 }) => {
     return (
-        <>
+        <div id="calendly-hero">
             <style jsx global>{`
                 .calendly-container {
                     width: 100%;
@@ -80,7 +80,7 @@ const CalendlyInline: React.FC<CalendlyInlineProps> = ({
                     />
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

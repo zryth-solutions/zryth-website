@@ -6,7 +6,7 @@ import CalendlyInline from "./CalendlyInline";
 // Hero Section Component
 const CallToActionHero = () => {
     return (
-        <section
+        <section 
             className="relative z-10 overflow-hidden py-20 lg:py-[115px]"
             style={{
                 background: 'radial-gradient(circle at 30% 40%, #3A4D73, #1A2B45)'
