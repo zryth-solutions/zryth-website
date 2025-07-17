@@ -3,8 +3,8 @@ import { MetadataConfig } from "@/types/seo";
 
 export const generateMetadata = (config: MetadataConfig): Metadata => {
   const {
-    title = "Zryth - AI-Powered Software Solutions That Transform Your Business",
-    description = "At Zryth, we specialize in building cutting-edge software solutions that harness the power of Artificial Intelligence to solve real-world problems across industries. From seamless CRM systems to intelligent cab booking platforms, we bring your vision to life.",
+    title = "Zryth - AI-Powered Software Solutions for Business",
+    description = "Zryth develops custom AI software solutions including CRM systems, booking platforms, and intelligent automation tools. We transform businesses across industries with cutting-edge artificial intelligence technology tailored to solve real-world challenges.",
     keywords = "AI software development, artificial intelligence, CRM systems, cab booking platform, software solutions, web development, mobile app development, custom software, business automation, machine learning",
     ogImage = "/images/og-image.jpg",
     ogType = "website",
@@ -81,8 +81,8 @@ export const generateMetadata = (config: MetadataConfig): Metadata => {
 };
 
 export const defaultSEOConfig: MetadataConfig = {
-  title: "Zryth - AI-Powered Software Solutions That Transform Your Business",
-  description: "At Zryth, we specialize in building cutting-edge software solutions that harness the power of Artificial Intelligence to solve real-world problems across industries. From seamless CRM systems to intelligent cab booking platforms, we bring your vision to life.",
+  title: "Zryth - AI-Powered Software Solutions for Business",
+  description: "Zryth develops custom AI software solutions including CRM systems, booking platforms, and intelligent automation tools. We transform businesses across industries with cutting-edge artificial intelligence technology tailored to solve real-world challenges.",
   keywords: "AI software development, artificial intelligence, CRM systems, cab booking platform, software solutions, web development, mobile app development, custom software, business automation, machine learning",
   ogImage: "/images/og-image.jpg",
   ogType: "website",
@@ -94,8 +94,8 @@ export const defaultSEOConfig: MetadataConfig = {
 // Page-specific SEO configurations
 export const pageSEOConfigs = {
   home: {
-    title: "Zryth - AI-Powered Software Solutions That Transform Your Business",
-    description: "At Zryth, we specialize in building cutting-edge software solutions that harness the power of Artificial Intelligence to solve real-world problems across industries. From seamless CRM systems to intelligent cab booking platforms, we bring your vision to life.",
+    title: "Zryth - AI-Powered Software Solutions for Business",
+    description: "Zryth develops custom AI software solutions including CRM systems, booking platforms, and intelligent automation tools. We transform businesses across industries with cutting-edge artificial intelligence technology tailored to solve real-world challenges.",
     keywords: "AI software development, artificial intelligence, CRM systems, cab booking platform, software solutions, web development, mobile app development, custom software, business automation, machine learning",
   },
   about: {
