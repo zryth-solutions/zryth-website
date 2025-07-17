@@ -1,9 +1,14 @@
 "use client";
 
 import Head from "next/head";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { SEOProps } from "@/types/seo";
 
+/**
+ * Legacy SEO component for client-side usage
+ * Note: For App Router, prefer using the metadata API in page.tsx files
+ * This component is maintained for backward compatibility and specific client-side cases
+ */
 const SEO = ({
     title = "Zryth - AI-Powered Software Solutions for Business",
     description = "Zryth develops custom AI software solutions including CRM systems, booking platforms, and intelligent automation tools. We transform businesses across industries with cutting-edge artificial intelligence technology tailored to solve real-world challenges.",
@@ -18,8 +23,18 @@ const SEO = ({
     additionalMetaTags = [],
 }: SEOProps) => {
     const pathname = usePathname();
+    const searchParams = useSearchParams();
     const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://zryth.com";
-    const currentUrl = canonicalUrl || `${siteUrl}${pathname}`;
+
+    // Generate canonical URL with proper query parameter handling
+    let currentUrl = canonicalUrl;
+    if (!currentUrl) {
+        // Clean the pathname and remove query parameters for canonical URL
+        const cleanPath = pathname.split("?")[0];
+        const normalizedPath = cleanPath === "/" ? "" : cleanPath;
+        currentUrl = `${siteUrl}${normalizedPath}`;
+    }
+
     const fullTitle = title.includes("Zryth") ? title : `${title} | Zryth`;
 
     // Default structured data
@@ -65,7 +80,7 @@ const SEO = ({
             {/* Google Site Verification */}
             <meta name="google-site-verification" content="OFc8aIrZzjLgKeXNJi0AURx0e2E5aWgzhwEI2ZCucRU" />
 
-            {/* Canonical URL */}
+            {/* Canonical URL - Properly formatted */}
             <link rel="canonical" href={currentUrl} />
 
             {/* Open Graph Meta Tags */}

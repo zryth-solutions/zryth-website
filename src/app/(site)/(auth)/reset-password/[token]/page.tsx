@@ -1,10 +1,8 @@
 import ResetPassword from "@/components/Auth/ResetPassword";
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import { Metadata } from "next";
+import { generateAuthMetadata } from "@/utils/metadata";
 
-export const metadata: Metadata = {
-  title: "Reset Password | Play SaaS Starter Kit and Boilerplate for Next.js",
-};
+export const metadata = generateAuthMetadata('resetPassword');
 
 export default async function ResetPasswordPage({
   params,

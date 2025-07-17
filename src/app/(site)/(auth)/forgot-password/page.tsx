@@ -1,11 +1,9 @@
 import React from "react";
 import ForgotPassword from "@/components/Auth/ForgotPassword";
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import { Metadata } from "next";
+import { generateAuthMetadata } from "@/utils/metadata";
 
-export const metadata: Metadata = {
-  title: "Forgot Password | Play SaaS Starter Kit and Boilerplate for Next.js",
-};
+export const metadata = generateAuthMetadata('forgotPassword');
 
 const ForgotPasswordPage = () => {
   return (

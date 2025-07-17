@@ -7,55 +7,109 @@ import markdownToHtml from "@/utils/markdownToHtml";
 import { format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
+import { Metadata } from "next";
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
 
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://zryth.com";
+  const siteName = process.env.SITE_NAME || "Zryth";
+  const authorName = process.env.AUTHOR_NAME || "Zryth Team";
 
-  const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
-  const post = getPostBySlug(slug, ["title", "author", "content", "metadata"]);
+  try {
+    const post = getPostBySlug(slug, ["title", "excerpt", "author", "content", "coverImage", "date"]);
 
-  const siteName = process.env.SITE_NAME || "Your Site Name";
-  const authorName = process.env.AUTHOR_NAME || "Your Author Name";
+    if (post && post.title) {
+      const canonicalUrl = `${siteUrl}/blogs/${slug}`;
+      const fullTitle = `${post.title} | ${siteName}`;
+      const description = post.excerpt || `Read this insightful article about ${post.title} on the Zryth blog.`;
+      const ogImage = post.coverImage || "/images/og-image.jpg";
 
-  if (post) {
-    const metadata = {
-      title: `${post.title || "Single Post Page"} | ${siteName}`,
-      author: authorName,
-      robots: {
-        index: true,
-        follow: true,
-        nocache: true,
-        googleBot: {
-          index: true,
-          follow: false,
-          "max-video-preview": -1,
-          "max-image-preview": "large",
-          "max-snippet": -1,
+      return {
+        title: fullTitle,
+        description,
+        authors: [{ name: authorName }],
+        creator: authorName,
+        publisher: siteName,
+        keywords: "AI software development, technology insights, business automation, artificial intelligence, software solutions",
+        openGraph: {
+          type: "article",
+          locale: "en_US",
+          url: canonicalUrl,
+          title: fullTitle,
+          description,
+          siteName,
+          images: [
+            {
+              url: `${siteUrl}${ogImage}`,
+              width: 1200,
+              height: 630,
+              alt: post.title,
+            },
+          ],
+          publishedTime: post.date ? new Date(post.date).toISOString() : undefined,
         },
-      },
-    };
-
-    return metadata;
-  } else {
-    return {
-      title: "Not Found",
-      description: "No blog article has been found",
-      author: authorName,
-      robots: {
-        index: false,
-        follow: false,
-        nocache: false,
-        googleBot: {
+        twitter: {
+          card: "summary_large_image",
+          title: fullTitle,
+          description,
+          images: [`${siteUrl}${ogImage}`],
+          creator: "@zryth",
+          site: "@zryth",
+        },
+        alternates: {
+          canonical: canonicalUrl,
+        },
+        robots: {
+          index: true,
+          follow: true,
+          nocache: true,
+          googleBot: {
+            index: true,
+            follow: true,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+          },
+        },
+        other: {
+          "article:author": authorName,
+          "article:section": "Technology",
+          "theme-color": "#090E34",
+        },
+      };
+    } else {
+      // Handle case where post is not found
+      return {
+        title: `Blog Post Not Found | ${siteName}`,
+        description: "The requested blog post could not be found. Explore our other articles on AI and software development.",
+        robots: {
           index: false,
           follow: false,
-          "max-video-preview": -1,
-          "max-image-preview": "large",
-          "max-snippet": -1,
+          nocache: false,
+          googleBot: {
+            index: false,
+            follow: false,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+          },
         },
+        alternates: {
+          canonical: `${siteUrl}/blogs`,
+        },
+      };
+    }
+  } catch (error) {
+    console.error("Error generating metadata for blog post:", error);
+    return {
+      title: `Blog Post | ${siteName}`,
+      description: "Read our latest insights on AI and software development.",
+      alternates: {
+        canonical: `${siteUrl}/blogs`,
       },
     };
   }

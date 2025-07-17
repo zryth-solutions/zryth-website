@@ -1,11 +1,8 @@
 import SignUp from "@/components/Auth/SignUp";
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import { Metadata } from "next";
+import { generateAuthMetadata } from "@/utils/metadata";
 
-export const metadata: Metadata = {
-  title:
-    "Sign Up | Play SaaS Starter Kit and Boilerplate for Next.js",
-};
+export const metadata = generateAuthMetadata('signup');
 
 const SignupPage = () => {
   return (
