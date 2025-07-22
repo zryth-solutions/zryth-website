@@ -28,6 +28,17 @@ export interface MetadataConfig {
   };
 }
 
+export interface BlogPostData {
+  title: string;
+  description: string;
+  image: string;
+  author: string;
+  datePublished: string;
+  dateModified: string;
+  url: string;
+  slug: string;
+}
+
 export interface StructuredDataConfig {
   "@context": string;
   "@type": string;
