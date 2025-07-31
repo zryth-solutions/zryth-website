@@ -10,4 +10,8 @@ export {
   ErrorIcon,
   LoadingSpinner,
   CheckmarkIcon
-} from './ContactIcons'; 
+} from './ContactIcons';
+export {
+  CallToActionLeftDecorative,
+  CallToActionRightDecorative
+} from './CallToActionDecorative'; 
