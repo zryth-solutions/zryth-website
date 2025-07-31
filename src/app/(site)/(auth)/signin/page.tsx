@@ -1,17 +1,18 @@
-import Signin from "@/components/Auth/SignIn";
-import Breadcrumb from "@/components/Common/Breadcrumb";
-import { generateAuthMetadata } from "@/utils/metadata";
+// COMMENTED OUT - Page not being used
+// import Signin from "@/components/Auth/SignIn";
+// import Breadcrumb from "@/components/Common/Breadcrumb";
+// import { generateAuthMetadata } from "@/utils/metadata";
 
-export const metadata = generateAuthMetadata('signin');
+// export const metadata = generateAuthMetadata('signin');
 
-const SigninPage = () => {
-  return (
-    <>
-      <Breadcrumb pageName="Sign In Page" />
+// const SigninPage = () => {
+//   return (
+//     <>
+//       <Breadcrumb pageName="Sign In Page" />
 
-      <Signin />
-    </>
-  );
-};
+//       <Signin />
+//     </>
+//   );
+// };
 
-export default SigninPage;
+// export default SigninPage;

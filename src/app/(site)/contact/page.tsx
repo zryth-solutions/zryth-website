@@ -1,16 +1,17 @@
-import Breadcrumb from "@/components/Common/Breadcrumb";
-import Contact from "@/components/Contact";
-import { generateMetadata, pageSEOConfigs } from "@/utils/metadata";
+// COMMENTED OUT - Page not being used
+// import Breadcrumb from "@/components/Common/Breadcrumb";
+// import Contact from "@/components/Contact";
+// import { generateMetadata, pageSEOConfigs } from "@/utils/metadata";
 
-export const metadata = generateMetadata(pageSEOConfigs.contact);
+// export const metadata = generateMetadata(pageSEOConfigs.contact);
 
-const ContactPage = () => {
-  return (
-    <main>
-      <Breadcrumb pageName="Contact Page" />
-      <Contact />
-    </main>
-  );
-};
+// const ContactPage = () => {
+//   return (
+//     <main>
+//       <Breadcrumb pageName="Contact Page" />
+//       <Contact />
+//     </main>
+//   );
+// };
 
-export default ContactPage;
+// export default ContactPage;
