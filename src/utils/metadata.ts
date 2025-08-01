@@ -100,6 +100,7 @@ export const generateMetadata = (config: MetadataConfig, currentPath?: string): 
     alternates: {
       canonical: finalCanonicalUrl,
     },
+    manifest: "/manifest.json",
     verification: {
       google: "OFc8aIrZzjLgKeXNJi0AURx0e2E5aWgzhwEI2ZCucRU",
     },
