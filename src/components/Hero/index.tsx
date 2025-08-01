@@ -52,7 +52,7 @@ const Hero = () => {
                 <div className="mt-16">
                   <Image
                     src="/images/hero/zryth_dashboard.png"
-                    alt="Zryth AI Solutions"
+                    alt="Zryth AI Solutions Dashboard"
                     className="mx-auto max-w-full rounded-t-xl rounded-tr-xl"
                     width={845}
                     height={316}

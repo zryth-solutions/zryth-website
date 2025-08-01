@@ -1,5 +1,4 @@
 import About from "@/components/About";
-// import HomeBlogSection from "@/components/Blog/HomeBlogSection";
 import CallToAction from "@/components/Calendly";
 import Clients from "@/components/Clients";
 import ScrollUp from "@/components/Common/ScrollUp";

@@ -1,6 +1,5 @@
 "use client";
 
-import { SessionProvider } from "next-auth/react";
 import { ThemeProvider } from "next-themes";
 import ToasterContext from "./api/contex/ToasetContex";
 import { useEffect, useState } from "react";
@@ -22,7 +21,6 @@ export default function ClientLayout({
     }
 
     return (
-        <SessionProvider>
             <ThemeProvider
                 attribute="class"
                 enableSystem={false}
@@ -32,6 +30,6 @@ export default function ClientLayout({
                 {children}
                 {/* <ChatBot /> */}
             </ThemeProvider>
-        </SessionProvider>
+      
     );
 } 
