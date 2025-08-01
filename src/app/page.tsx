@@ -10,13 +10,12 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
-import { getAllPosts } from "@/utils/markdown";
+
 import { generateMetadata, pageSEOConfigs } from "@/utils/metadata";
 
 export const metadata = generateMetadata(pageSEOConfigs.home);
 
 export default function Home() {
-  const posts = getAllPosts(["title", "date", "excerpt", "coverImage", "slug"]);
 
   return (
     <main>
@@ -29,7 +28,6 @@ export default function Home() {
       <Testimonials />
       <Faq />
       <Team />
-      {/* <HomeBlogSection posts={posts} /> */}
       <Contact />
       <Clients />
     </main>

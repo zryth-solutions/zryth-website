@@ -5,7 +5,6 @@ import WhatsAppFloat from "@/components/WhatsAppFloat";
 import { SessionProvider } from "next-auth/react";
 import { ThemeProvider } from "next-themes";
 import "../styles/index.css";
-import "../styles/prism-vsc-dark-plus.css";
 import ToasterContext from "./api/contex/ToasetContex";
 import ClientLayout from "./client-layout";
 import { generateMetadata, pageSEOConfigs, generateStructuredData } from "@/utils/metadata";
