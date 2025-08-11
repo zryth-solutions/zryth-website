@@ -30,7 +30,6 @@ This will launch the template on [localhost:3000](http://localhost:3000).
 Our comprehensive documentation includes all the guides you'll need for integrating various features.
 
 ### Deployment on PaaS
-
 If your project is hosted on a GitHub repository, you can deploy it using free and user-friendly platforms like [Vercel](https://vercel.com/) or [Netlify](https://netlify.com/). Both provide generous free tiers for hosting Next.js projects.
 
 ### License Information
