@@ -1,0 +1,54 @@
+{
+  "name": "Zryth - AI-Powered Software Solutions",
+  "short_name": "Zryth",
+  "description": "Transform your business with AI-powered software solutions. Custom CRM systems, booking platforms, and automation tools for modern enterprises.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090E34",
+  "theme_color": "#090E34",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["business", "productivity", "technology"],
+  "icons": [
+    {
+      "src": "/images/logo/zryth-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Services",
+      "short_name": "Services",
+      "description": "View our AI software services",
+      "url": "/services",
+      "icons": [
+        {
+          "src": "/images/logo/zryth-logo.svg",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Get in touch with us",
+      "url": "/contact",
+      "icons": [
+        {
+          "src": "/images/logo/zryth-logo.svg",
+          "sizes": "96x96",
+          "type": "image/svg+xml"
+        }
+      ]
+    }
+  ]
+} 

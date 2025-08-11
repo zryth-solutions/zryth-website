@@ -1,17 +1,12 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
-import NotFound from "@/components/NotFound";
-import { Metadata } from "next";
+import { generateAuthMetadata } from "@/utils/metadata";
 
-export const metadata: Metadata = {
-  title: "404 Page | Play SaaS Starter Kit and Boilerplate for Next.js",
-};
+export const metadata = generateAuthMetadata('notFound');
 
 const ErrorPage = () => {
   return (
     <>
       <Breadcrumb pageName="404 Page" />
-
-      <NotFound />
     </>
   );
 };
