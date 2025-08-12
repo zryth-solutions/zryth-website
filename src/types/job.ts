@@ -3,7 +3,7 @@ export interface JobListing {
   title: string;
   department: string;
   location: string;
-  type: 'Full-time' | 'Part-time' | 'Contract' | 'Internship';
+  type: "Full-time" | "Part-time" | "Contract" | "Internship";
   experience: string;
   salary: string;
   description: string;
@@ -23,10 +23,10 @@ export interface JobApplication {
   email: string;
   phone: string;
   experience: string;
-  resume: File | null;
+  resumeLink: string;
   coverLetter: string;
   appliedDate: string;
-  status: 'Pending' | 'Reviewed' | 'Shortlisted' | 'Rejected' | 'Hired';
+  status: "Pending" | "Reviewed" | "Shortlisted" | "Rejected" | "Hired";
 }
 
 export interface Department {
@@ -40,4 +40,4 @@ export interface JobFilters {
   location: string;
   type: string;
   search: string;
-} 
+}

@@ -21,7 +21,7 @@ export default function JobApplicationModal({
     phone: "",
     experience: "",
     coverLetter: "",
-    resume: null as File | null,
+    resumeLink: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
@@ -31,11 +31,6 @@ export default function JobApplicationModal({
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0] || null;
-    setFormData((prev) => ({ ...prev, resume: file }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -53,7 +48,7 @@ export default function JobApplicationModal({
         email: formData.email,
         phone: formData.phone,
         experience: formData.experience,
-        resume: formData.resume,
+        resumeLink: formData.resumeLink,
         coverLetter: formData.coverLetter,
         appliedDate: new Date().toISOString(),
         status: "Pending",
@@ -80,7 +75,7 @@ export default function JobApplicationModal({
           phone: "",
           experience: "",
           coverLetter: "",
-          resume: null,
+          resumeLink: "",
         });
         alert(
           "Application submitted successfully! You will receive a confirmation email shortly."
@@ -244,17 +239,20 @@ export default function JobApplicationModal({
 
                 <div>
                   <label className="block text-sm font-medium text-dark dark:text-white mb-2">
-                    Resume/CV *
+                    Resume Link *
                   </label>
                   <input
-                    type="file"
-                    accept=".pdf,.doc,.docx"
-                    onChange={handleFileChange}
+                    type="url"
+                    name="resumeLink"
+                    value={formData.resumeLink}
+                    onChange={handleInputChange}
                     required
-                    className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-dark-2 text-dark dark:text-white focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary file:text-white hover:file:bg-primary/90"
+                    placeholder="Enter the public link to your resume (Google Drive, Dropbox, etc.)"
+                    className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-dark-2 text-dark dark:text-white focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary"
                   />
                   <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-                    Accepted formats: PDF, DOC, DOCX (Max 5MB)
+                    Please provide a public link to your resume from Google
+                    Drive, Dropbox, or similar platforms
                   </p>
                 </div>
 
