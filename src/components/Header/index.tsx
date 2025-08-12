@@ -71,7 +71,7 @@ const Header = () => {
     if (path) {
       const element = document.querySelector(path);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: "smooth" });
       }
     }
   };
@@ -79,20 +79,80 @@ const Header = () => {
   return (
     <>
       <header
-        className={`ud-header left-0 top-0 flex w-full items-center ${sticky
-          ? `shadow-nav fixed border-b border-stroke bg-white/80 backdrop-blur-[5px] dark:border-dark-3/20 dark:bg-dark/10 ${navbarOpen ? 'z-[9998]' : 'z-[999]'}`
-          : `absolute bg-transparent ${navbarOpen ? 'z-[9998]' : 'z-40'}`
-          }`}
+        className={`ud-header left-0 top-0 flex w-full items-center ${
+          sticky
+            ? `shadow-nav fixed border-b border-stroke bg-white/80 backdrop-blur-[5px] dark:border-dark-3/20 dark:bg-dark/10 ${navbarOpen ? "z-[9998]" : "z-[999]"}`
+            : `absolute bg-transparent ${navbarOpen ? "z-[9998]" : "z-40"}`
+        }`}
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
             <div className="w-60 max-w-full px-4">
               <Link
                 href="/"
-                className={`navbar-logo block w-full ${sticky ? "py-2" : "py-5"
-                  } `}
+                className={`navbar-logo block w-full ${
+                  sticky ? "py-2" : "py-5"
+                }  sticky || pathUrl === "/careers" ? "text-white" : "text-dark"
+                } ${sticky ? "py-2" : "py-5"} `}
               >
-                {pathUrl !== "/" ? (
+                {pathUrl === "/careers" && !sticky ? (
+                  <>
+                    <svg
+                      width="200"
+                      height="60"
+                      viewBox="0 0 200 60"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="header-logo w-full dark:hidden"
+                    >
+                      <circle
+                        cx="30"
+                        cy="30"
+                        r="25"
+                        stroke="#4285F4"
+                        strokeWidth="5"
+                        fill="none"
+                      />
+                      <text
+                        x="70"
+                        y="42"
+                        fontFamily="Arial, sans-serif"
+                        fontSize="36"
+                        fontWeight="bold"
+                        fill="white"
+                      >
+                        ZRYTH
+                      </text>
+                    </svg>
+                    <svg
+                      width="200"
+                      height="60"
+                      viewBox="0 0 200 60"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="header-logo hidden w-full dark:block"
+                    >
+                      <circle
+                        cx="30"
+                        cy="30"
+                        r="25"
+                        stroke="#4285F4"
+                        strokeWidth="5"
+                        fill="none"
+                      />
+                      <text
+                        x="70"
+                        y="42"
+                        fontFamily="Arial, sans-serif"
+                        fontSize="36"
+                        fontWeight="bold"
+                        fill="white"
+                      >
+                        ZRYTH
+                      </text>
+                    </svg>
+                  </>
+                ) : pathUrl !== "/" ? (
                   <>
                     <Image
                       src={`/images/logo/zryth-logo-dark.svg`}
@@ -112,17 +172,22 @@ const Header = () => {
                 ) : (
                   <>
                     <Image
-                      src={`${sticky
-                        ? "/images/logo/zryth-logo-dark.svg"
-                        : "/images/logo/zryth-logo.svg"
-                        }`}
+                      src={`${
+                        sticky
+                          ? "/images/logo/zryth-logo-dark.svg"
+                          : "/images/logo/zryth-logo.svg"
+                      }`}
                       alt="Zryth"
                       width={140}
                       height={30}
                       className="header-logo w-full dark:hidden"
                     />
                     <Image
-                      src={"/images/logo/zryth-logo.svg"}
+                      src={`${
+                        sticky
+                          ? "/images/logo/zryth-logo-dark.svg"
+                          : "/images/logo/zryth-logo.svg"
+                      }`}
                       alt="Zryth"
                       width={140}
                       height={30}
@@ -143,25 +208,31 @@ const Header = () => {
                   className="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden z-[9997]"
                 >
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${navbarOpen ? " top-[7px] rotate-45" : " "
-                      } ${pathUrl !== "/" && "!bg-dark dark:!bg-white"} ${pathUrl === "/" && sticky
+                    className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${
+                      navbarOpen ? " top-[7px] rotate-45" : " "
+                    } ${pathUrl !== "/" && "!bg-dark dark:!bg-white"} ${
+                      pathUrl === "/" && sticky
                         ? "bg-dark dark:bg-white"
                         : "bg-white"
-                      }`}
+                    }`}
                   />
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${navbarOpen ? "opacity-0 " : " "
-                      } ${pathUrl !== "/" && "!bg-dark dark:!bg-white"} ${pathUrl === "/" && sticky
+                    className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${
+                      navbarOpen ? "opacity-0 " : " "
+                    } ${pathUrl !== "/" && "!bg-dark dark:!bg-white"} ${
+                      pathUrl === "/" && sticky
                         ? "bg-dark dark:bg-white"
                         : "bg-white"
-                      }`}
+                    }`}
                   />
                   <span
-                    className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${navbarOpen ? " top-[-8px] -rotate-45" : " "
-                      } ${pathUrl !== "/" && "!bg-dark dark:!bg-white"} ${pathUrl === "/" && sticky
+                    className={`relative my-1.5 block h-0.5 w-[30px] transition-all duration-300 ${
+                      navbarOpen ? " top-[-8px] -rotate-45" : " "
+                    } ${pathUrl !== "/" && "!bg-dark dark:!bg-white"} ${
+                      pathUrl === "/" && sticky
                         ? "bg-dark dark:bg-white"
                         : "bg-white"
-                      }`}
+                    }`}
                   />
                 </button>
 
@@ -173,19 +244,31 @@ const Header = () => {
                         <li key={index} className="group relative">
                           <Link
                             onClick={(e) => {
+                              // If it's an internal page link (starts with /), let it navigate normally
+                              if (menuItem.path.startsWith("/")) {
+                                return; // Let the default Link behavior handle it
+                              }
+                              // If it's a hash link (starts with #), prevent default and scroll
                               e.preventDefault();
                               if (menuItem.path) {
-                                const element = document.querySelector(menuItem.path);
+                                const element = document.querySelector(
+                                  menuItem.path
+                                );
                                 if (element) {
-                                  element.scrollIntoView({ behavior: 'smooth' });
+                                  element.scrollIntoView({
+                                    behavior: "smooth",
+                                  });
                                 }
                               }
                             }}
                             href={menuItem.path}
-                            className={`flex py-6 text-base group-hover:text-primary ${pathUrl === "/" && !sticky
-                              ? "text-white"
-                              : "text-dark dark:text-white dark:group-hover:text-primary"
-                              } ${pathUrl === menuItem?.path && sticky && "!text-primary"}`}
+                            className={`flex py-6 text-base group-hover:text-primary ${
+                              pathUrl === "/" && !sticky
+                                ? "text-white"
+                                : pathUrl === "/careers" && !sticky
+                                  ? "text-white"
+                                  : "text-black"
+                            } ${pathUrl === menuItem?.path && sticky && "!text-primary"}`}
                           >
                             {menuItem.title}
                           </Link>
@@ -197,15 +280,19 @@ const Header = () => {
 
                 {/* Mobile Menu Overlay */}
                 {navbarOpen && (
-                  <div className="fixed inset-0 bg-black bg-opacity-50 z-[10000] lg:hidden" style={{ height: '100vh' }} />
+                  <div
+                    className="fixed inset-0 bg-black bg-opacity-50 z-[10000] lg:hidden"
+                    style={{ height: "100vh" }}
+                  />
                 )}
 
                 {/* Mobile Sliding Menu */}
                 <div
                   ref={mobileMenuRef}
-                  className={`fixed top-0 right-0 h-screen w-80 bg-white dark:bg-dark-2 shadow-xl z-[10001] transform transition-transform duration-300 ease-in-out lg:hidden ${navbarOpen ? "translate-x-0" : "translate-x-full"
-                    }`}
-                  style={{ backgroundColor: 'white', height: '100vh' }}
+                  className={`fixed top-0 right-0 h-screen w-80 bg-white dark:bg-dark-2 shadow-xl z-[10001] transform transition-transform duration-300 ease-in-out lg:hidden ${
+                    navbarOpen ? "translate-x-0" : "translate-x-full"
+                  }`}
+                  style={{ backgroundColor: "white", height: "100vh" }}
                 >
                   {/* Mobile Menu Header */}
                   <div className="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-dark-2">
@@ -257,6 +344,12 @@ const Header = () => {
                           <li key={index}>
                             <Link
                               onClick={(e) => {
+                                // If it's an internal page link (starts with /), let it navigate normally
+                                if (menuItem.path.startsWith("/")) {
+                                  setNavbarOpen(false); // Close mobile menu
+                                  return; // Let the default Link behavior handle it
+                                }
+                                // If it's a hash link (starts with #), prevent default and scroll
                                 e.preventDefault();
                                 if (menuItem.path) {
                                   handleMenuItemClick(menuItem.path);
