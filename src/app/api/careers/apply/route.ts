@@ -73,30 +73,29 @@ async function sendEmailNotifications(application: JobApplication) {
   }
 }
 
-// Function to send application to SheetDB
-async function sendToSheetDB(application: JobApplication) {
+// Function to send application to Google Sheets
+async function sendToGoogleSheets(application: JobApplication) {
   try {
-    const sheetDBEndpoint = process.env.SHEETDB_ENDPOINT;
-    if (!sheetDBEndpoint) {
-      throw new Error(
-        "SheetDB endpoint is not configured in environment variables."
-      );
-    }
+    const { appendToSheet } = await import("@/utils/googleSheets");
 
-    const response = await fetch(sheetDBEndpoint, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(application),
-    });
+    // Convert application data to array format for Google Sheets
+    const rowData = [
+      application.id,
+      application.jobTitle,
+      application.firstName,
+      application.lastName,
+      application.email,
+      application.phone,
+      application.experience,
+      application.coverLetter,
+      application.appliedDate,
+      application.resume || "",
+    ];
 
-    if (!response.ok) {
-      throw new Error(`Failed to send data to SheetDB: ${response.statusText}`);
-    }
+    await appendToSheet(rowData);
   } catch (error) {
-    console.error("Error sending data to SheetDB:", error);
-    throw new Error("Failed to send application to SheetDB.");
+    console.error("Error sending data to Google Sheets:", error);
+    throw new Error("Failed to send application to Google Sheets.");
   }
 }
 
@@ -150,7 +149,7 @@ export async function POST(request: NextRequest) {
 
     // Send to SheetDB
     try {
-      await sendToSheetDB(application);
+      await sendToGoogleSheets(application);
     } catch (error) {
       console.error("Error in sendToSheetDB:", error);
       throw new Error("Failed to send application to SheetDB.");
