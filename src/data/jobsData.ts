@@ -12,8 +12,8 @@ export const jobsData: JobListing[] = [
     description:
       "We are seeking a motivated Frontend Developer Intern to join our engineering team and gain hands-on experience in web development.",
     requirements: [
-      "Basic knowledge of HTML, CSS, and JavaScript",
-      "Familiarity with React.js",
+      "Basic knowledge of HTML, CSS, Tailwind CSS and JavaScript",
+      "Familiarity with React.js , Typescript",
       "Understanding of responsive design principles",
       "Currently pursuing or recently completed B.Tech/MCA in Computer Science or related field",
     ],
@@ -43,7 +43,7 @@ export const jobsData: JobListing[] = [
     description:
       "Looking for an enthusiastic Backend Developer Intern to join our team and learn server-side development.",
     requirements: [
-      "Basic knowledge of Node.js or Python",
+      "Basic knowledge of Node.js or Python and django",
       "Understanding of databases (SQL/NoSQL)",
       "Familiarity with REST APIs",
       "Currently pursuing or recently completed B.Tech/MCA in Computer Science or related field",
