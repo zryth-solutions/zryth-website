@@ -116,14 +116,14 @@ const Footer = () => {
                     Careers
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     href="#testimonials"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
                     Testimonial
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
