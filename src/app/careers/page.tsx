@@ -1,4 +1,45 @@
-"use client";
+export const metadata = {
+  title: "Careers at Zryth Solutions | Join Our Team of Innovators",
+  description:
+    "Explore exciting career opportunities at Zryth Solutions. Join a passionate team, work on cutting-edge projects, and grow your career in tech, AI, and digital innovation.",
+  keywords: [
+    "careers",
+    "jobs",
+    "hiring",
+    "Zryth Solutions",
+    "tech jobs",
+    "AI jobs",
+    "software jobs",
+    "work at Zryth",
+    "join our team",
+  ],
+  alternates: {
+    canonical: "https://zryth.com/careers",
+  },
+  openGraph: {
+    title: "Careers at Zryth Solutions | Join Our Team of Innovators",
+    description:
+      "Explore exciting career opportunities at Zryth Solutions. Join a passionate team, work on cutting-edge projects, and grow your career in tech, AI, and digital innovation.",
+    url: "https://zryth.com/careers",
+    images: [
+      {
+        url: "/images/team/team-01.png",
+        width: 1200,
+        height: 630,
+        alt: "Zryth Solutions Team",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Careers at Zryth Solutions | Join Our Team of Innovators",
+    description: "Explore exciting career opportunities at Zryth Solutions.",
+    images: ["/images/team/team-01.png"],
+  },
+};
+
+("use client");
 
 import { useState, useEffect } from "react";
 import JobListings from "@/components/Careers/JobListings";
