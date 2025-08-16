@@ -77,9 +77,6 @@ export default function JobApplicationModal({
           coverLetter: "",
           resumeLink: "",
         });
-        alert(
-          "Application submitted successfully! You will receive a confirmation email shortly."
-        );
       } else {
         throw new Error(data.message || "Failed to submit application");
       }

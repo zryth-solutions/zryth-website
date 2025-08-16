@@ -29,7 +29,7 @@ export const jobsData: JobListing[] = [
       "Flexible working hours",
       "Possibility of full-time employment",
     ],
-    postedDate: "2025-08-12",
+    postedDate: "2025-08-17",
     isActive: true,
   },
   {
@@ -60,7 +60,7 @@ export const jobsData: JobListing[] = [
       "Flexible working hours",
       "Possibility of full-time employment",
     ],
-    postedDate: "2025-08-12",
+    postedDate: "2025-08-17",
     isActive: true,
   },
   {
@@ -91,7 +91,7 @@ export const jobsData: JobListing[] = [
       "Remote work flexibility",
       "Professional growth opportunities",
     ],
-    postedDate: "2025-08-12",
+    postedDate: "2025-08-17",
     isActive: true,
   },
   {
@@ -122,7 +122,7 @@ export const jobsData: JobListing[] = [
       "Work-life balance programs",
       "Team building activities",
     ],
-    postedDate: "2025-08-12",
+    postedDate: "2025-08-16",
     isActive: true,
   },
   {
@@ -153,7 +153,7 @@ export const jobsData: JobListing[] = [
       "Professional development budget",
       "Flexible working hours",
     ],
-    postedDate: "2025-08-08",
+    postedDate: "2025-08-16",
     isActive: true,
   },
   {
@@ -184,7 +184,7 @@ export const jobsData: JobListing[] = [
       "Modern office environment",
       "Team building activities",
     ],
-    postedDate: "2025-08-08",
+    postedDate: "2025-08-15",
     isActive: true,
   },
 ];
