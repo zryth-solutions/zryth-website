@@ -89,8 +89,11 @@ async function sendToGoogleSheets(application: JobApplication) {
       application.experience,
       application.coverLetter,
       application.appliedDate,
-      application.resume || "",
+      application.resumeLink || "",
     ];
+
+    console.log("Sending to Google Sheets:", rowData);
+    console.log("Resume link in row data:", rowData[9]);
 
     await appendToSheet(rowData);
   } catch (error) {
@@ -112,6 +115,7 @@ export async function POST(request: NextRequest) {
       "experience",
       "jobId",
       "jobTitle",
+      "resumeLink",
     ];
     for (const field of requiredFields) {
       if (!body[field]) {
@@ -133,11 +137,14 @@ export async function POST(request: NextRequest) {
       email: body.email,
       phone: body.phone,
       experience: body.experience,
-      resume: null, // File handling would need to be done separately with FormData
+      resumeLink: body.resumeLink || "", // Updated to match frontend field name
       coverLetter: body.coverLetter || "",
       appliedDate: new Date().toISOString(),
       status: "Pending",
     };
+
+    console.log("Application data received:", application);
+    console.log("Resume link:", application.resumeLink);
 
     // Send email notifications
     try {
