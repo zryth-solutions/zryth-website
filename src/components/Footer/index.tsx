@@ -110,12 +110,20 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
+                    href="/careers"
+                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                  >
+                    Careers
+                  </Link>
+                </li>
+                {/* <li>
+                  <Link
                     href="#testimonials"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
                     Testimonial
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
@@ -215,14 +223,14 @@ const Footer = () => {
                     FAQ
                   </Link>
                 </li>
-                {/* <li>
+                <li>
                   <Link
                     href="#"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
                     Blogs
                   </Link>
-                </li> */}
+                </li>
                 <li>
                   <Link
                     href="#contact"
