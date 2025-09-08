@@ -63,7 +63,7 @@ const BookingSection: React.FC<BookingSectionProps> = ({
     className = ""
 }) => {
     return (
-        <section id="calendly-booking" className={`bg-white py-20 lg:py-[90px] ${className}`}>
+        <section id="calendly-booking" className={`bg-white py-12 lg:py-[60px] ${className}`}>
             <div className="container mx-auto">
                 <div className="mx-auto max-w-[700px] text-center mb-12">
                     <h3 className="mb-4 text-3xl font-bold text-dark md:text-[40px] md:leading-[1.2]">

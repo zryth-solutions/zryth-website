@@ -10,6 +10,34 @@ const teamData: TeamType[] = [
     image: "/images/team/kushagra.png",
     linkedinLink: "https://www.linkedin.com/in/codewithkushagra/",
   },
+  {
+    id: 2,
+    name: "Manas Dewari",
+    designation: "Co-Founder",
+    image: "/images/team/manas.jpeg",
+    linkedinLink: "https://www.linkedin.com/in/manas-dewari/",
+  },
+  {
+    id: 3,
+    name: "Apurv Shashvat",
+    designation: "AI Engineer",
+    image: "/images/team/apurv.jpeg",
+    linkedinLink: "https://www.linkedin.com/in/apurv-s-023564269/",
+  },
+  {
+    id: 4,
+    name: "Shashank Kumar",
+    designation: "AI Engineer",
+    image: "/images/team/shashank.jpeg",
+    linkedinLink: "https://www.linkedin.com/in/shashank-kumar-4b6a80206/",
+  },
+  {
+    id: 5,
+    name: "Malay Dewari",
+    designation: "Full-Stack Engineer",
+    image: "/images/team/malay.jpeg",
+    linkedinLink: "https://www.linkedin.com/in/malay-dewari/",
+  },
 ];
 
 const Team = () => {
