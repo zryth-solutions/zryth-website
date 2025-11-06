@@ -17,10 +17,10 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">
-                  AI-Powered Software Solutions That Transform Your Business
+                  AI Agents & Knowledge Bases That Automate Your Workflow
                 </h1>
                 <p className="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]">
-                  At Zryth, we build cutting-edge AI-powered software solutions that solve real-world problems. From seamless CRM systems to intelligent cab booking platforms, we deliver smart, scalable, and user-centric technology.
+                  Transform your business with intelligent AI agents and custom knowledge bases. From automated book quality control to intelligent customer support, we build AI solutions that integrate seamlessly into your existing workflows and deliver unprecedented efficiency.
                 </p>
                 <ul className="mb-10 flex flex-wrap items-center justify-center gap-5">
                   <li>

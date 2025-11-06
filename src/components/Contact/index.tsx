@@ -135,10 +135,10 @@ const Contact = () => {
                     </h3>
                     <p className="text-base text-body-color dark:text-dark-6">
                       <a
-                        href="mailto:zrythsolutions@gmail.com"
+                        href="mailto:contact@zryth.com"
                         className="hover:text-primary transition-colors"
                       >
-                        zrythsolutions@gmail.com
+                        contact@zryth.com
                       </a>
                     </p>
                   </div>
@@ -153,10 +153,10 @@ const Contact = () => {
                     </h3>
                     <p className="text-base text-body-color dark:text-dark-6">
                       <a
-                        href="tel:+91-9870661438"
+                        href="tel:+91-7455900568"
                         className="hover:text-primary transition-colors"
                       >
-                        +91-9870661438
+                        +91-7455900568
                       </a>
                     </p>
                   </div>

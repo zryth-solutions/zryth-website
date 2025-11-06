@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 export default function WhatsAppFloat() {
     const [isVisible, setIsVisible] = useState(false);
-    const phoneNumber = "+91 9870661438";
+    const phoneNumber = "+91 7455900568";
     const message = "Hello! I'm interested in your services.";
 
     // Show button after scrolling down 300 pixels

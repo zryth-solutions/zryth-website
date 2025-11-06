@@ -9,7 +9,7 @@ const Faq = () => {
         <SectionTitle
           subtitle="FAQ"
           title="Any Questions? Answered"
-          paragraph="Find answers to the most commonly asked questions about our software, features, and services. If you can't find what you're looking for, feel free to reach out to our support team."
+          paragraph="Find answers to the most commonly asked questions about our AI agents, knowledge bases, and automation solutions. If you can't find what you're looking for, feel free to reach out to our support team."
           width="640px"
           center
         />
@@ -17,31 +17,31 @@ const Faq = () => {
         <div className="-mx-4 mt-[60px] flex flex-wrap lg:mt-20">
           <div className="w-full px-4 lg:w-1/2">
             <SingleFaq
-              question="What software solutions does Zryth develop?"
-              answer="We build custom business software, AI agents, web applications, mobile apps, and enterprise systems tailored to your specific needs and industry requirements."
+              question="What AI solutions does Zryth provide?"
+              answer="We specialize in AI agents, custom knowledge bases, and workflow automation. Our flagship product is PagePerfect AI for book quality control, plus custom AI agents for customer support, data analysis, and business process automation."
             />
             <SingleFaq
-              question="How does your tech consultancy work?"
-              answer="We analyze your current systems, identify improvement opportunities, and provide strategic recommendations for technology stack selection and digital transformation planning."
+              question="How do AI agents integrate with existing workflows?"
+              answer="Our AI agents seamlessly integrate with your current systems through APIs, webhooks, and custom connectors. They can work alongside your team, handling routine tasks while escalating complex issues to human agents."
             />
             <SingleFaq
-              question="What is your typical project timeline?"
-              answer="Projects typically range from 4-16 weeks depending on complexity. We follow agile methodology with regular client communication and milestone reviews."
+              question="What is PagePerfect AI and how accurate is it?"
+              answer="PagePerfect AI is our specialized book quality control system for publishers. It achieves 99.9% accuracy in manuscript review, offering automated editing workflows, style consistency checks, and custom knowledge base integration for publishing houses."
             />
           </div>
 
           <div className="w-full px-4 lg:w-1/2">
             <SingleFaq
-              question="Do you provide post-launch support?"
-              answer="Yes, we offer comprehensive support including bug fixes, performance optimization, feature updates, and technical maintenance with flexible service packages available."
+              question="Do you provide post-launch support for AI solutions?"
+              answer="Yes, we offer comprehensive AI solution support including model fine-tuning, performance optimization, knowledge base updates, and continuous learning improvements with flexible service packages."
             />
             <SingleFaq
-              question="What technologies do you use?"
-              answer="We work with React, Node.js, Python, cloud platforms (AWS, Azure, GCP), databases (PostgreSQL, MongoDB), and modern AI/ML frameworks."
+              question="What AI technologies and frameworks do you use?"
+              answer="We work with advanced AI frameworks including OpenAI GPT, Anthropic Claude, LangChain, vector databases, RAG systems, and custom model training. Our solutions integrate with cloud platforms (AWS, Azure, GCP) and enterprise systems."
             />
             <SingleFaq
-              question="How do you ensure software quality?"
-              answer="We implement industry-standard security practices, conduct thorough code reviews, perform comprehensive testing, and follow secure coding guidelines throughout development."
+              question="How do you ensure AI solution accuracy and reliability?"
+              answer="We implement rigorous testing protocols, continuous model validation, human-in-the-loop verification, and maintain comprehensive quality metrics. Our AI solutions undergo extensive testing before deployment and are monitored continuously for performance."
             />
           </div>
         </div>

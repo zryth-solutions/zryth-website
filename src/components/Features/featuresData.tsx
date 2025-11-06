@@ -22,8 +22,8 @@ const featuresData: Feature[] = [
         <circle cx="26" cy="24" r="4" fill="white" />
       </svg>
     ),
-    title: "AI-Powered Development",
-    paragraph: "Building smart applications that adapt, learn, and grow with your business needs using cutting-edge AI technologies.",
+    title: "AI Agents & Automation",
+    paragraph: "Intelligent AI agents that automate complex workflows, handle customer interactions, and perform sophisticated tasks with human-like reasoning.",
     btn: "Learn More",
     btnLink: "/#about",
   },
@@ -45,8 +45,8 @@ const featuresData: Feature[] = [
         <rect x="21" y="18" width="6" height="3" fill="white" />
       </svg>
     ),
-    title: "Custom Software Solutions",
-    paragraph: "Tailored systems designed specifically for your business requirements, from CRM platforms to inventory management.",
+    title: "Custom Knowledge Bases",
+    paragraph: "Build intelligent knowledge repositories that understand your business context, integrate with your systems, and provide instant, accurate insights.",
     btn: "Learn More",
     btnLink: "/#about",
   },
@@ -67,10 +67,10 @@ const featuresData: Feature[] = [
         <circle cx="18.5" cy="30" r="4" fill="white" />
       </svg>
     ),
-    title: "Cross-Industry Expertise",
-    paragraph: "Proven experience across logistics, recruitment, travel, retail, and more with specialized solutions for each sector.",
-    btn: "Learn More",
-    btnLink: "/#about",
+    title: "PagePerfect AI - Book QC",
+    paragraph: "Revolutionary AI-powered book quality control system for publishers, offering 99.9% accuracy in manuscript review and automated editing workflows.",
+    btn: "View Product",
+    btnLink: "https://pageperfectai.zryth.com/",
   },
   {
     id: 4,
@@ -89,8 +89,8 @@ const featuresData: Feature[] = [
         <circle cx="31" cy="6" r="3" fill="white" />
       </svg>
     ),
-    title: "End-to-End Service",
-    paragraph: "From initial concept to deployment and maintenance, we provide complete project lifecycle management.",
+    title: "Workflow Integration",
+    paragraph: "Seamlessly integrate AI solutions into your existing workflows with APIs, custom connectors, and enterprise-grade security protocols.",
     btn: "Learn More",
     btnLink: "/#about",
   },

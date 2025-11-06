@@ -14,12 +14,12 @@ const About = () => {
             <div className="w-full px-4 lg:w-1/2">
               <div className="mb-12 max-w-[540px] lg:mb-0">
                 <h2 className="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2]">
-                  Empowering Digital Transformation with AI Innovation
+                  Pioneering AI Agents & Knowledge Base Solutions
                 </h2>
                 <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
-                  At Zryth, we specialize in building cutting-edge software solutions that harness the power of Artificial Intelligence to solve real-world problems across industries. Whether you&apos;re a startup, enterprise, or scaling business, we bring your vision to life with smart, scalable, and user-centric technology.
+                  At Zryth, we specialize in building intelligent AI agents and custom knowledge bases that revolutionize how businesses operate. Our flagship product, PagePerfect AI, demonstrates our expertise in AI-powered quality control for publishers, achieving 99.9% accuracy in manuscript review.
                   <br /> <br />
-                  Our agile team is dedicated to creating high-performance digital products that drive growth, optimize operations, and enhance customer experience. With a passion for innovation and a commitment to quality, we&apos;re helping businesses stay ahead in a fast-evolving digital world.
+                  We create AI solutions that integrate seamlessly into your existing workflows - from automated customer support agents to intelligent knowledge repositories that understand your business context. Our team combines deep AI expertise with practical business understanding to deliver solutions that drive real efficiency gains and competitive advantages.
                 </p>
 
                 <Link
