@@ -1,7 +1,8 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, FileCheck, Languages, Brain, GraduationCap, Layout, Image as ImageIcon } from "lucide-react";
 import SectionTitle from "../Common/SectionTitle";
+import Link from "next/link";
 
 const PagePerfectAIBanner = () => {
   const handleTryNow = () => {
@@ -18,44 +19,154 @@ const PagePerfectAIBanner = () => {
         />
 
         <div className="-mx-4 mt-12 flex flex-wrap items-stretch lg:mt-20">
-          <div className="flex w-full px-4 md:w-1/2 lg:w-1/2">
+          <div className="flex w-full px-4 md:w-1/2 lg:w-1/3">
             <div className="wow fadeInUp mb-12 flex w-full flex-col rounded-xl bg-white p-8 shadow-testimonial dark:bg-dark dark:shadow-none" data-wow-delay=".15s">
+              <div 
+                className="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl"
+                style={{
+                  background: 'radial-gradient(circle at 30% 40%, #3A4D73, #1A2B45)'
+                }}
+              >
+                <span className="absolute left-0 top-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"></span>
+                <FileCheck className="h-8 w-8 text-white" />
+              </div>
               <h3 className="mb-4 text-xl font-bold text-dark dark:text-white">
-                99.9% Accuracy
+                AI-powered Book Proofreader
               </h3>
               <p className="mb-6 flex-grow text-base text-body-color dark:text-dark-6">
-                Our AI models are specifically trained for manuscript analysis with unmatched precision in detecting inconsistencies, grammar issues, and style violations.
+                Detects grammatical, contextual, and stylistic errors, providing improvement suggestions for enhanced book quality.
               </p>
+              <Link
+                href="#contact"
+                className="text-base font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary"
+              >
+                For pricing contact us
+              </Link>
             </div>
           </div>
-          <div className="flex w-full px-4 md:w-1/2 lg:w-1/2">
+          <div className="flex w-full px-4 md:w-1/2 lg:w-1/3">
             <div className="wow fadeInUp mb-12 flex w-full flex-col rounded-xl bg-white p-8 shadow-testimonial dark:bg-dark dark:shadow-none" data-wow-delay=".15s">
+              <div 
+                className="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl"
+                style={{
+                  background: 'radial-gradient(circle at 30% 40%, #3A4D73, #1A2B45)'
+                }}
+              >
+                <span className="absolute left-0 top-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"></span>
+                <Languages className="h-8 w-8 text-white" />
+              </div>
               <h3 className="mb-4 text-xl font-bold text-dark dark:text-white">
-                10x Faster Reviews
+                Multilingual Publishing AI Agent
               </h3>
               <p className="mb-6 flex-grow text-base text-body-color dark:text-dark-6">
-                Review entire manuscripts in minutes, not days. Our parallel processing handles multiple chapters simultaneously while maintaining consistency.
+                Translates and localizes books into multiple languages, eliminating expensive translation costs.
               </p>
+              <Link
+                href="#contact"
+                className="text-base font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary"
+              >
+                For pricing contact us
+              </Link>
             </div>
           </div>
-          <div className="flex w-full px-4 md:w-1/2 lg:w-1/2">
+          <div className="flex w-full px-4 md:w-1/2 lg:w-1/3">
             <div className="wow fadeInUp mb-12 flex w-full flex-col rounded-xl bg-white p-8 shadow-testimonial dark:bg-dark dark:shadow-none" data-wow-delay=".15s">
+              <div 
+                className="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl"
+                style={{
+                  background: 'radial-gradient(circle at 30% 40%, #3A4D73, #1A2B45)'
+                }}
+              >
+                <span className="absolute left-0 top-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"></span>
+                <Brain className="h-8 w-8 text-white" />
+              </div>
               <h3 className="mb-4 text-xl font-bold text-dark dark:text-white">
-                Custom Knowledge Base
+                AI Book Writing Agent
               </h3>
               <p className="mb-6 flex-grow text-base text-body-color dark:text-dark-6">
-                Upload your style guides, previous works, and reference materials. Our AI learns your unique voice and requirements for perfectly tailored audits.
+                Uses graph database to build plot, connect the dots, and then build a book that is actually relevant.
               </p>
+              <Link
+                href="#contact"
+                className="text-base font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary"
+              >
+                For pricing contact us
+              </Link>
             </div>
           </div>
-          <div className="flex w-full px-4 md:w-1/2 lg:w-1/2">
+          <div className="flex w-full px-4 md:w-1/2 lg:w-1/3">
             <div className="wow fadeInUp mb-12 flex w-full flex-col rounded-xl bg-white p-8 shadow-testimonial dark:bg-dark dark:shadow-none" data-wow-delay=".15s">
+              <div 
+                className="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl"
+                style={{
+                  background: 'radial-gradient(circle at 30% 40%, #3A4D73, #1A2B45)'
+                }}
+              >
+                <span className="absolute left-0 top-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"></span>
+                <GraduationCap className="h-8 w-8 text-white" />
+              </div>
               <h3 className="mb-4 text-xl font-bold text-dark dark:text-white">
-                Agentic Workflows
+                Interactive Learning Generators
               </h3>
               <p className="mb-6 flex-grow text-base text-body-color dark:text-dark-6">
-                Automated multi-step review processes that handle complex editing tasks, fact-checking, and consistency validation across entire manuscripts.
+                Develops e-learning modules and interactive content for educational publishers.
               </p>
+              <Link
+                href="#contact"
+                className="text-base font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary"
+              >
+                For pricing contact us
+              </Link>
+            </div>
+          </div>
+          <div className="flex w-full px-4 md:w-1/2 lg:w-1/3">
+            <div className="wow fadeInUp mb-12 flex w-full flex-col rounded-xl bg-white p-8 shadow-testimonial dark:bg-dark dark:shadow-none" data-wow-delay=".15s">
+              <div 
+                className="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl"
+                style={{
+                  background: 'radial-gradient(circle at 30% 40%, #3A4D73, #1A2B45)'
+                }}
+              >
+                <span className="absolute left-0 top-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"></span>
+                <Layout className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="mb-4 text-xl font-bold text-dark dark:text-white">
+                AI Template and Style Sheet Generator
+              </h3>
+              <p className="mb-6 flex-grow text-base text-body-color dark:text-dark-6">
+                Creates ready-to-use professional book layouts and design frameworks.
+              </p>
+              <Link
+                href="#contact"
+                className="text-base font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary"
+              >
+                For pricing contact us
+              </Link>
+            </div>
+          </div>
+          <div className="flex w-full px-4 md:w-1/2 lg:w-1/3">
+            <div className="wow fadeInUp mb-12 flex w-full flex-col rounded-xl bg-white p-8 shadow-testimonial dark:bg-dark dark:shadow-none" data-wow-delay=".15s">
+              <div 
+                className="relative z-10 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl"
+                style={{
+                  background: 'radial-gradient(circle at 30% 40%, #3A4D73, #1A2B45)'
+                }}
+              >
+                <span className="absolute left-0 top-0 z-[-1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-2xl bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"></span>
+                <ImageIcon className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="mb-4 text-xl font-bold text-dark dark:text-white">
+                Book Cover Generator
+              </h3>
+              <p className="mb-6 flex-grow text-base text-body-color dark:text-dark-6">
+                Designs context-aware and brand-aligned book covers using AI.
+              </p>
+              <Link
+                href="#contact"
+                className="text-base font-medium text-dark hover:text-primary dark:text-white dark:hover:text-primary"
+              >
+                For pricing contact us
+              </Link>
             </div>
           </div>
         </div>
