@@ -42,7 +42,7 @@ export default function VisionPopup() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-gray-900/60 backdrop-blur-xl overflow-y-auto py-4 px-4"
+          className="fixed inset-0 z-[9999] flex items-center justify-center bg-gray-900/60 backdrop-blur-xl overflow-y-auto py-4 px-4"
           onClick={handleClose}
         >
           <motion.div
@@ -50,11 +50,11 @@ export default function VisionPopup() {
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.8, opacity: 0, y: 20 }}
             transition={{ type: "spring", duration: 0.6 }}
-            className="relative max-w-4xl w-full my-auto bg-white rounded-2xl md:rounded-3xl shadow-2xl border border-gray-200 max-h-[90vh] overflow-y-auto"
+            className="relative max-w-4xl w-full my-auto bg-white rounded-2xl md:rounded-3xl shadow-2xl border border-gray-200 max-h-[90vh] overflow-y-auto z-10"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Control buttons */}
-            <div className="absolute top-3 right-3 md:top-4 md:right-4 z-10 flex gap-2">
+            <div className="absolute top-3 right-3 md:top-4 md:right-4 z-20 flex gap-2">
               {/* Mute/Unmute button */}
               <button
                 onClick={toggleMute}
@@ -95,15 +95,15 @@ export default function VisionPopup() {
             </div>
 
             {/* Background glow effects */}
-            <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-2xl md:rounded-3xl">
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-50 rounded-full blur-3xl" />
-              <div className="absolute top-0 right-0 w-64 h-64 bg-purple-50 rounded-full blur-3xl" />
-              <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-50 rounded-full blur-3xl" />
+            <div className="absolute inset-0 overflow-hidden pointer-events-none rounded-2xl md:rounded-3xl z-0">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-50 rounded-full blur-3xl opacity-50" />
+              <div className="absolute top-0 right-0 w-64 h-64 bg-purple-50 rounded-full blur-3xl opacity-50" />
+              <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-50 rounded-full blur-3xl opacity-50" />
             </div>
 
-            <div className="relative grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 p-4 sm:p-6 md:p-12">
+            <div className="relative grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 p-4 sm:p-6 md:p-12 z-10">
               {/* Left side - Animated Sphere */}
-              <div className="flex items-center justify-center py-4 md:py-0">
+              <div className="flex items-center justify-center py-4 md:py-0 relative z-10">
                 <div className="relative w-48 h-48 sm:w-60 sm:h-60 md:w-80 md:h-80">
                   {/* Animated Sphere */}
                   <AnimatedSphere isSpeaking={isSpeaking} />
@@ -119,9 +119,9 @@ export default function VisionPopup() {
                       repeat: Infinity,
                       ease: "easeInOut",
                     }}
-                    className="hidden sm:block absolute top-8 -left-4"
+                    className="hidden sm:block absolute top-8 -left-4 z-20"
                   >
-                    <div className="p-2 md:p-3 bg-blue-50 rounded-2xl border border-blue-200">
+                    <div className="p-2 md:p-3 bg-blue-50 rounded-2xl border border-blue-200 shadow-md">
                       <BookOpen className="w-5 h-5 md:w-6 md:h-6 text-blue-600" />
                     </div>
                   </motion.div>
@@ -137,9 +137,9 @@ export default function VisionPopup() {
                       ease: "easeInOut",
                       delay: 0.5,
                     }}
-                    className="hidden sm:block absolute bottom-12 -right-4"
+                    className="hidden sm:block absolute bottom-12 -right-4 z-20"
                   >
-                    <div className="p-2 md:p-3 bg-purple-50 rounded-2xl border border-purple-200">
+                    <div className="p-2 md:p-3 bg-purple-50 rounded-2xl border border-purple-200 shadow-md">
                       <Sparkles className="w-5 h-5 md:w-6 md:h-6 text-purple-600" />
                     </div>
                   </motion.div>
@@ -155,9 +155,9 @@ export default function VisionPopup() {
                       ease: "easeInOut",
                       delay: 1,
                     }}
-                    className="hidden sm:block absolute top-1/2 -right-6"
+                    className="hidden sm:block absolute top-1/2 -right-6 z-20"
                   >
-                    <div className="p-2 md:p-3 bg-blue-50 rounded-2xl border border-blue-200">
+                    <div className="p-2 md:p-3 bg-blue-50 rounded-2xl border border-blue-200 shadow-md">
                       <Zap className="w-5 h-5 md:w-6 md:h-6 text-blue-600" />
                     </div>
                   </motion.div>
@@ -165,7 +165,7 @@ export default function VisionPopup() {
               </div>
 
               {/* Right side - Content */}
-              <div className="flex flex-col justify-center space-y-3 md:space-y-6 overflow-hidden">
+              <div className="flex flex-col justify-center space-y-3 md:space-y-6 overflow-hidden relative z-10">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -237,7 +237,7 @@ export default function VisionPopup() {
             </div>
 
             {/* Bottom decorative line */}
-            <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-600 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-blue-600 to-transparent z-10" />
           </motion.div>
         </motion.div>
       )}
