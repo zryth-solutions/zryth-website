@@ -67,7 +67,7 @@ const featuresData: Feature[] = [
         <circle cx="18.5" cy="30" r="4" fill="white" />
       </svg>
     ),
-    title: "PagePerfect AI - Book QC",
+    title: "Wrytflow AI - Book QC",
     paragraph: "Revolutionary AI-powered book quality control system for publishers, offering 99.9% accuracy in manuscript review and automated editing workflows.",
     btn: "View Product",
     btnLink: "https://pageperfectai.zryth.com/",

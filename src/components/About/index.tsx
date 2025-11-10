@@ -17,7 +17,7 @@ const About = () => {
                   Pioneering AI Agents & Knowledge Base Solutions
                 </h2>
                 <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
-                  At Zryth, we specialize in building intelligent AI agents and custom knowledge bases that revolutionize how businesses operate. Our flagship product, PagePerfect AI, demonstrates our expertise in AI-powered quality control for publishers, achieving 99.9% accuracy in manuscript review.
+                  At Zryth, we specialize in building intelligent AI agents and custom knowledge bases that revolutionize how businesses operate. Our flagship product, Wrytflow AI, demonstrates our expertise in AI-powered quality control for publishers, achieving 99.9% accuracy in manuscript review.
                   <br /> <br />
                   We create AI solutions that integrate seamlessly into your existing workflows - from automated customer support agents to intelligent knowledge repositories that understand your business context. Our team combines deep AI expertise with practical business understanding to deliver solutions that drive real efficiency gains and competitive advantages.
                 </p>

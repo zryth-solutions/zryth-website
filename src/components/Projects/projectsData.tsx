@@ -17,7 +17,7 @@ const projectsData: Project[] = [
   {
     id: 1,
     icon: PROJECT_IMAGES.AI_TRIP_PLANNER,
-    title: "PagePerfect AI - Book Quality Control",
+    title: "Wrytflow AI - Book Quality Control",
     category: "AI Agents & Publishing",
     paragraph: "Revolutionary AI-powered book quality control system for publishers, featuring 99.9% accuracy in manuscript review, automated editing workflows, and custom knowledge base integration.",
   },

@@ -18,15 +18,15 @@ const Faq = () => {
           <div className="w-full px-4 lg:w-1/2">
             <SingleFaq
               question="What AI solutions does Zryth provide?"
-              answer="We specialize in AI agents, custom knowledge bases, and workflow automation. Our flagship product is PagePerfect AI for book quality control, plus custom AI agents for customer support, data analysis, and business process automation."
+              answer="We specialize in AI agents, custom knowledge bases, and workflow automation. Our flagship product is Wrytflow AI for book quality control, plus custom AI agents for customer support, data analysis, and business process automation."
             />
             <SingleFaq
               question="How do AI agents integrate with existing workflows?"
               answer="Our AI agents seamlessly integrate with your current systems through APIs, webhooks, and custom connectors. They can work alongside your team, handling routine tasks while escalating complex issues to human agents."
             />
             <SingleFaq
-              question="What is PagePerfect AI and how accurate is it?"
-              answer="PagePerfect AI is our specialized book quality control system for publishers. It achieves 99.9% accuracy in manuscript review, offering automated editing workflows, style consistency checks, and custom knowledge base integration for publishing houses."
+              question="What is Wrytflow AI and how accurate is it?"
+              answer="Wrytflow AI is our specialized book quality control system for publishers. It achieves 99.9% accuracy in manuscript review, offering automated editing workflows, style consistency checks, and custom knowledge base integration for publishing houses."
             />
           </div>
 
