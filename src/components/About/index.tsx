@@ -17,9 +17,11 @@ const About = () => {
                   Pioneering AI Agents & Knowledge Base Solutions
                 </h2>
                 <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
-                  At Zryth, we specialize in building intelligent AI agents and custom knowledge bases that revolutionize how businesses operate. Our flagship product, Wrytflow AI, demonstrates our expertise in AI-powered quality control for publishers, achieving 99.9% accuracy in manuscript review.
-                  <br /> <br />
-                  We create AI solutions that integrate seamlessly into your existing workflows - from automated customer support agents to intelligent knowledge repositories that understand your business context. Our team combines deep AI expertise with practical business understanding to deliver solutions that drive real efficiency gains and competitive advantages.
+                At Zryth, we don't just build software - <strong>we build intelligent business operating systems powered by AI</strong>. Modern businesses struggle not because they lack tools, but because their systems are slow, manual, and disconnected. We transform these fragmented workflows into integrated, AI-driven systems that think, automate, and scale with your growth.     
+                             <br /> <br />
+                             Our flagship solution, Wrytflow AI, demonstrates this vision - delivering 99.9% accurate AI-powered manuscript review and end-to-end quality control for publishers.
+<br />
+We design systems that plug seamlessly into your existing operations - from automated support agents to intelligent knowledge bases and industry-specific CRMs. Our team blends deep AI expertise with real business understanding, delivering solutions that multiply productivity, accelerate decisions, and remove friction from every process.
                 </p>
 
                 <Link

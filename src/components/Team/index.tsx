@@ -19,25 +19,61 @@ const teamData: TeamType[] = [
   },
   {
     id: 3,
+    name: "Malay Dewari",
+    designation: "Full-Stack Engineer",
+    image: "/images/team/malay.jpeg",
+    linkedinLink: "https://www.linkedin.com/in/malay-dewari/",
+  },
+  {
+    id: 4,
     name: "Apurv Shashvat",
     designation: "AI Engineer",
     image: "/images/team/apurv.jpeg",
     linkedinLink: "https://www.linkedin.com/in/apurv-s-023564269/",
   },
   {
-    id: 4,
+    id: 5,
     name: "Shashank Kumar",
     designation: "AI Engineer",
     image: "/images/team/shashank.jpeg",
     linkedinLink: "https://www.linkedin.com/in/shashank-kumar-4b6a80206/",
   },
   {
-    id: 5,
-    name: "Malay Dewari",
-    designation: "Full-Stack Engineer",
-    image: "/images/team/malay.jpeg",
-    linkedinLink: "https://www.linkedin.com/in/malay-dewari/",
+    id: 6,
+    name: "Devansh Sharma",
+    designation: "AI Engineer",
+    image: "https://i.postimg.cc/WzVRj0vP/dewansh.png",
+    linkedinLink: "https://www.linkedin.com/in/adawatia/",
   },
+  {
+    id: 7,
+    name: "Himanshu Shekhar",
+    designation: "AI Engineer",
+    image: "https://i.postimg.cc/5ysLTR6p/arjun.jpg",
+    linkedinLink: "https://www.linkedin.com/in/himanshu-shekhar-406975218/",
+  },
+  {
+    id: 8,
+    name: "Aditya Kumar Jaiswal",
+    designation: "Quality Assurance Engineer",
+    image: "https://i.postimg.cc/5yJc18MT/aditya.jpg",
+    linkedinLink: "https://www.linkedin.com/in/aditya-kumar-jaiswal-4a986b257/",
+  },
+  {
+    id: 9,
+    name: "Amit Kumar",
+    designation: "full stack developer",
+    image: "https://i.postimg.cc/QtB380bq/Whats-App-Image-2025-12-08-at-11-44-11-modified.png",
+    linkedinLink: "https://www.linkedin.com/in/amitkr79/",
+  },
+  {
+    id: 10,
+    name: "RISHAV SISODIYA",
+    designation: "Full stack developer",
+    image: "https://i.postimg.cc/MKcL4sRd/rishabhi.jpg",
+    linkedinLink: "https://www.linkedin.com/in/rishav-sisodiya-a64633294/",
+  },
+
 ];
 
 const Team = () => {

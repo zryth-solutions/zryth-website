@@ -6,8 +6,8 @@ const Clients = () => {
   const duplicatedClients = [...clientsData, ...clientsData, ...clientsData, ...clientsData];
 
   return (
-    <section className="pb-20 dark:bg-dark overflow-hidden">
-      <div className="container px-4">
+    <section className="dark:bg-dark overflow-hidden pt-12">
+      <div className="container ">
         <div className="relative">
           {/* Marquee container with infinite scroll */}
           <div className="flex animate-scroll whitespace-nowrap">

@@ -1,3 +1,5 @@
-export { default as VisionPopup } from "./VisionPopup";
-export { default as WrytflowAIBanner } from "./Banner";
+// export { default as WrytflowAIBanner } from "./Banner";
+
+// Empty export to make this a valid ES module
+export {};
 

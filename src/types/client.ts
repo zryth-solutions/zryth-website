@@ -4,4 +4,5 @@ export type Client = {
   logo: string;
   logoWhite: string;
   link: string;
+  showTextWithLogo?: boolean; // Optional: Display logo + text together
 };

@@ -4,6 +4,8 @@ import Link from "next/link";
 
 const SingleTeam = ({ team }: { team: TeamType }) => {
   const { image, name, designation, linkedinLink } = team;
+  const isExternalImage = image.startsWith("http://") || image.startsWith("https://");
+  
   return (
     <div className="w-full px-4 sm:w-1/2 lg:w-1/3 xl:w-1/3">
       <div className="group mb-8 rounded-xl bg-white px-5 pb-10 pt-12 shadow-testimonial dark:bg-dark dark:shadow-none">
@@ -14,6 +16,7 @@ const SingleTeam = ({ team }: { team: TeamType }) => {
             className="w-full rounded-full"
             width={120}
             height={120}
+            unoptimized={isExternalImage}
           />
           <span className="absolute bottom-0 left-0 -z-10 h-10 w-10 rounded-full bg-secondary opacity-0 transition-all group-hover:opacity-100"></span>
           <span className="absolute right-0 top-0 -z-10 opacity-0 transition-all group-hover:opacity-100">

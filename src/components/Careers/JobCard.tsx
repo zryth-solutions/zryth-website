@@ -25,7 +25,7 @@ export default function JobCard({ job, onApply }: JobCardProps) {
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
         <div className="flex-1">
           <div className="flex items-start justify-between mb-4">
-            <div>
+            <div className="flex-1">
               <h3 className="text-xl font-semibold text-dark dark:text-white mb-2">
                 {job.title}
               </h3>
@@ -33,7 +33,7 @@ export default function JobCard({ job, onApply }: JobCardProps) {
                 {job.description}
               </p>
             </div>
-            <div className="text-right">
+            <div className="text-right self-start ml-4">
               <span className="inline-block bg-primary bg-opacity-10 text-primary px-3 py-1 rounded-full text-sm font-medium">
                 {job.type}
               </span>
@@ -181,9 +181,14 @@ export default function JobCard({ job, onApply }: JobCardProps) {
             </div>
             <button
               onClick={onApply}
-              className="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
+              disabled={!job.isActive}
+              className={`px-6 py-2 rounded-lg font-medium transition-colors duration-200 ${
+                job.isActive
+                  ? "bg-primary hover:bg-primary/90 text-white cursor-pointer"
+                  : "bg-gray-300 dark:bg-gray-600 text-gray-500 dark:text-gray-400 cursor-not-allowed"
+              }`}
             >
-              Apply Now
+              {job.isActive ? "Apply Now" : "Closed"}
             </button>
           </div>
         </div>

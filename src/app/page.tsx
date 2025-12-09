@@ -9,8 +9,6 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Team from "@/components/Team";
 import Testimonials from "@/components/Testimonials";
-import { WrytflowAIBanner } from "@/components/WrytflowAI";
-import WrytflowAIClient from "@/components/WrytflowAI/WrytflowAIClient";
 
 import { generateMetadata, pageSEOConfigs } from "@/utils/metadata";
 
@@ -21,18 +19,18 @@ export default function Home() {
   return (
     <main>
       <ScrollUp />
-      <WrytflowAIClient />
       <Hero />
-      <WrytflowAIBanner />
+      <Clients />
       <Features />
-      <About />
+     
       <Projects />
+      <About />
       <CallToAction />
       {/* <Testimonials /> */}
       <Faq />
       <Team />
       <Contact />
-      <Clients />
+    
     </main>
   );
 }

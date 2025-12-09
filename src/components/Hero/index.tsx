@@ -17,7 +17,7 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">
-                  AI Agents & Knowledge Bases That Automate Your Workflow
+                  We Build Enterprise AI Products With R&D and Scale That Matters
                 </h1>
                 <p className="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]">
                   Transform your business with intelligent AI agents and custom knowledge bases. From automated book quality control to intelligent customer support, we build AI solutions that integrate seamlessly into your existing workflows and deliver unprecedented efficiency.

@@ -15,6 +15,13 @@ const PROJECT_IMAGES = {
 
 const projectsData: Project[] = [
   {
+    id: 8,
+    icon: PROJECT_IMAGES.FLIGHT_BOOKING_WEBSITE,
+    title: "AI Integration Services",
+    category: "AI Agents & Integration",
+    paragraph: "Comprehensive AI integration services that seamlessly connect AI agents and knowledge bases with existing business systems and workflows.",
+  },
+  {
     id: 1,
     icon: PROJECT_IMAGES.AI_TRIP_PLANNER,
     title: "Wrytflow AI - Book Quality Control",
@@ -58,25 +65,12 @@ const projectsData: Project[] = [
   },
   {
     id: 7,
-    icon: PROJECT_IMAGES.PROJECT_MANAGEMENT_SOFTWARE,
-    title: "Custom AI Agent Development",
-    category: "AI Agents & Custom",
-    paragraph: "Tailored AI agent solutions designed for specific business needs, including custom training, integration, and ongoing optimization for maximum efficiency.",
-  },
-  {
-    id: 8,
     icon: PROJECT_IMAGES.FLIGHT_BOOKING_CRM,
     title: "AI Data Analysis Agent",
     category: "AI Agents & Analytics",
     paragraph: "Intelligent data analysis agent that processes large datasets, identifies patterns, and generates actionable business intelligence reports automatically.",
   },
-  {
-    id: 9,
-    icon: PROJECT_IMAGES.FLIGHT_BOOKING_WEBSITE,
-    title: "AI Integration Services",
-    category: "AI Agents & Integration",
-    paragraph: "Comprehensive AI integration services that seamlessly connect AI agents and knowledge bases with existing business systems and workflows.",
-  },
+ 
 ];
 
 export default projectsData; 
