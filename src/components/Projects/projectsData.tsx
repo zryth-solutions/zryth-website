@@ -16,60 +16,62 @@ const PROJECT_IMAGES = {
 const projectsData: Project[] = [
   {
     id: 8,
-    icon: PROJECT_IMAGES.FLIGHT_BOOKING_WEBSITE,
-    title: "AI Integration Services",
-    category: "AI Agents & Integration",
+    icon: "https://ik.imagekit.io/bdq0hopvw/triwize_dashboard.png?updatedAt=1765284920990",
+    title: "Triwize",
+    category: "SaaS AI",
     paragraph: "Comprehensive AI integration services that seamlessly connect AI agents and knowledge bases with existing business systems and workflows.",
   },
   {
     id: 1,
-    icon: PROJECT_IMAGES.AI_TRIP_PLANNER,
-    title: "Wrytflow AI - Book Quality Control",
-    category: "AI Agents & Publishing",
+    icon: "https://ik.imagekit.io/bdq0hopvw/Silver%20Inventory-20251209T132719Z-3-001/Silver%20Inventory/Pictures/s1.png?updatedAt=1765286975272",
+    title: "Silver Inventory",
+    category: "SaaS Product",
     paragraph: "Revolutionary AI-powered book quality control system for publishers, featuring 99.9% accuracy in manuscript review, automated editing workflows, and custom knowledge base integration.",
   },
-  {
-    id: 2,
-    icon: PROJECT_IMAGES.AGENTIC_AI_CAB_BOOKING,
-    title: "AI Customer Support Agent",
-    category: "AI Agents & Automation",
-    paragraph: "Intelligent customer support agent that handles complex queries, provides instant responses, and escalates issues seamlessly while maintaining brand voice consistency.",
-  },
-  {
-    id: 3,
-    icon: PROJECT_IMAGES.AI_INVENTORY_MANAGEMENT,
-    title: "Enterprise Knowledge Base",
-    category: "Knowledge Base & AI",
-    paragraph: "Custom knowledge repository that understands business context, integrates with existing systems, and provides intelligent insights for decision-making and automation.",
-  },
+ 
   {
     id: 4,
     icon: PROJECT_IMAGES.JOB_FINDING_PORTAL,
-    title: "AI Writing Assistant",
+    title: "AI Education",
     category: "AI Agents & Content",
     paragraph: "Intelligent writing agent that helps authors create compelling content, maintains consistency across documents, and provides real-time editing suggestions.",
   },
   {
+    id: 2,
+    icon: PROJECT_IMAGES.AGENTIC_AI_CAB_BOOKING,
+    title: "Box Inventory",
+    category: "AI Agents & Automation",
+    paragraph: "Intelligent customer support agent that handles complex queries, provides instant responses, and escalates issues seamlessly while maintaining brand voice consistency.",
+  },
+  {
     id: 5,
     icon: PROJECT_IMAGES.CRM_CHARTERED_ACCOUNTANTS,
-    title: "Product AI for Companies",
+    title: "Dimple Collection",
     category: "AI Agents & Business",
     paragraph: "AI-powered product intelligence system that analyzes market trends, customer feedback, and business data to provide actionable insights for product development.",
   },
   {
     id: 6,
     icon: PROJECT_IMAGES.CHILD_SURVEILLANCE_APP,
-    title: "AI Workflow Automation",
+    title: "Mill Software",
     category: "AI Agents & Process",
     paragraph: "Intelligent workflow automation agent that handles complex business processes, manages approvals, and optimizes operations across multiple departments.",
   },
   {
     id: 7,
     icon: PROJECT_IMAGES.FLIGHT_BOOKING_CRM,
-    title: "AI Data Analysis Agent",
+    title: "AI QC",
     category: "AI Agents & Analytics",
     paragraph: "Intelligent data analysis agent that processes large datasets, identifies patterns, and generates actionable business intelligence reports automatically.",
   },
+  {
+    id: 3,
+    icon: "https://ik.imagekit.io/bdq0hopvw/Rahiseva-20251209T132744Z-3-001/Rahiseva/Screenshot_2025-12-09-11-43-18-42_16cfac272ac59e829363b15dbbd5ff9a.jpg?tr=w-800,q-90&updatedAt=1765286941544",
+    title: "Rahi Seva",
+    category: "Transportation App",
+    paragraph: "A mobile app that connects passengers with nearby drivers. It allows users to conveniently book rides while offering the unique option to negotiate fares directly with drivers.",
+  },
+
  
 ];
 
