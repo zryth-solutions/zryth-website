@@ -8,7 +8,7 @@ const Clients = () => {
   return (
     <section className="dark:bg-dark overflow-hidden pt-12">
       <div className="container ">
-        <div className="relative">
+        <div className="relative overflow-hidden">
           {/* Marquee container with infinite scroll */}
           <div className="flex animate-scroll whitespace-nowrap">
             {duplicatedClients.map((client, i) => (

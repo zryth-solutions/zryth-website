@@ -2,7 +2,7 @@ import { Client } from "@/types/client";
 export const clientsData: Client[] = [
   {
     id: 1,
-    title: "Triwize",
+    title: "",
     logo: "https://i.postimg.cc/htfhwWQW/trivize.avif",
     logoWhite: "/images/brands/triwize-logo.svg",
     link: "https://www.triwize.com/",
@@ -10,7 +10,7 @@ export const clientsData: Client[] = [
   },
   {
     id: 2,
-    title: "Digital Chacha",
+    title: "",
     logo: "https://i.postimg.cc/qM93VYjF/digital_chacha.webp",
     logoWhite: "/images/brands/digitalchacha-logo.svg",
     link: "https://digitalchacha.com/",
@@ -18,7 +18,7 @@ export const clientsData: Client[] = [
   },
   {
     id: 3,
-    title: "Anuyog Software",
+    title: "",
     logo: "https://i.postimg.cc/PrBwsc29/anuyog_logo.png",
     logoWhite: "/images/brands/anuyog-logo.svg",
     link: "https://anuyogsoftwares.com/",
@@ -26,7 +26,7 @@ export const clientsData: Client[] = [
   },
   {
     id: 4,
-    title: "Dimple Collection",
+    title: "",
     logo: "https://i.postimg.cc/wvY923mD/dimple.avif",
     logoWhite: "/images/brands/dimple-logo.svg",
     link: "https://www.dimplecollection.in/?srsltid=AfmBOoqHGuBycBmHaE6-pKwuSYIRr4fee47bgm1sGuKpqDoZcM-rBi_h",
@@ -34,7 +34,7 @@ export const clientsData: Client[] = [
   },
   {
     id: 5,
-    title: "Agra Rollers",
+    title: "",
     logo: "https://i.postimg.cc/526jGdQb/agra-rollers.png",
     logoWhite: "https://i.postimg.cc/526jGdQb/agra-rollers.png",
     link: "https://www.agraroller.com/",
@@ -42,16 +42,16 @@ export const clientsData: Client[] = [
   },
   {
     id: 6,
-    title: "Rai seva",
-    logo: "https://i.postimg.cc/DwsDhS3H/drive.jpg",
-    logoWhite: "https://i.postimg.cc/JhD396k0/ARC-Ptv-Ltd-Logo.avif",
-    link: "#",
+    title: "",
+    logo: "https://i.postimg.cc/tg1R6J4z/logo-(1).jpg",
+    logoWhite: "https://i.postimg.cc/tg1R6J4z/logo-(1).jpg",
+    link: "https://rahiseva.com/",
     showTextWithLogo: true,
   },
 
   {
     id: 7,
-    title: "Oswaal Books",
+    title: "",
     logo: "https://i.postimg.cc/PJLYjkZH/Oswaal-Books-Logo.avif",
     logoWhite: "/images/brands/arc-ptv-logo.svg",
     link: "https://oswaal.ai/",

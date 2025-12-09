@@ -6,7 +6,7 @@ const SingleClient = ({ client }: { client: Client }) => {
   const { title, link, logo, logoWhite, showTextWithLogo } = client;
   
   return (
-    <div className="ud-single-logo flex-shrink-0 mx-8">
+    <div className="ud-single-logo flex-shrink-0 mx-4 sm:mx-8">
       <Link href={link} target="_blank" rel="nofollow noopner">
         {showTextWithLogo ? (
           // Logo + Text Layout (for clients like Agra Rollers, Triwize, Oswaal, Dimple Collection)
@@ -15,8 +15,8 @@ const SingleClient = ({ client }: { client: Client }) => {
               src={logo}
               alt={title}
               className="dark:hidden"
-              width={40}
-              height={40}
+              width={50}
+              height={50}
             />
             <Image
               src={logoWhite}

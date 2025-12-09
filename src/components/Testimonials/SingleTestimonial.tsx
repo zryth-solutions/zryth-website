@@ -9,8 +9,11 @@ const starIcon = (
 const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
   const { star, name, image, content, designation } = testimonial;
 
+  const fullStars = Math.floor(star);
+  const hasHalfStar = star % 1 !== 0;
+
   let ratingIcons = [];
-  for (let index = 0; index < star; index++) {
+  for (let index = 0; index < fullStars; index++) {
     ratingIcons.push(
       <span key={index} className="text-[#fbb040]">
         {starIcon}
@@ -18,18 +21,32 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
     );
   }
 
+  if (hasHalfStar) {
+    ratingIcons.push(
+      <span key="half" className="relative inline-block">
+        <span className="text-gray-300">{starIcon}</span>
+        <span
+          className="absolute left-0 top-0 text-[#fbb040]"
+          style={{ clipPath: "inset(0 50% 0 0)" }}
+        >
+          {starIcon}
+        </span>
+      </span>,
+    );
+  }
+
   return (
-    <div className="w-full px-4 md:w-1/2 lg:w-1/3">
+    <div className="w-full px-4 md:w-1/2 lg:w-1/2">
       <div
-        className="rounded-xl bg-white px-4 py-[30px] shadow-testimonial dark:bg-dark sm:px-[30px]"
+        className="flex h-full flex-col rounded-xl bg-white px-4 py-[30px] shadow-testimonial dark:bg-dark sm:px-[30px]"
         data-wow-delay=".1s"
       >
         <div className="mb-[18px] flex items-center gap-[2px]">
           {ratingIcons}
         </div>
 
-        <p className="mb-6 text-base text-body-color dark:text-dark-6">
-          “{content}
+        <p className="mb-6 flex-grow text-base text-body-color dark:text-dark-6">
+          "{content}
         </p>
 
         <div className="flex items-center gap-4">
@@ -39,7 +56,14 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
 
           <div>
             <h3 className="text-sm font-semibold text-dark dark:text-white">
-              {name}
+              <a
+                href="https://www.trustpilot.com/review/zryth.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-primary"
+              >
+                {name}
+              </a>
             </h3>
             <p className="text-body-secondary text-xs">{designation}</p>
           </div>

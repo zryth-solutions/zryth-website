@@ -26,7 +26,7 @@ export default function Home() {
       <Projects />
       <About />
       <CallToAction />
-      {/* <Testimonials /> */}
+      <Testimonials />
       <Faq />
       <Team />
       <Contact />

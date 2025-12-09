@@ -87,15 +87,21 @@ body {
     transform: translateX(0);
   }
 
+  50% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-75%);
+  }
   100% {
-    transform: translateX(-25%);
+    transform: translateX(-100%);
   }
 }
 
 .animate-scroll {
   /* Speed control: Lower number = faster, Higher number = slower */
-  /* Current: 9s (very fast) | Fast: 15s | Medium: 30s | Slow: 60s */
-  animation: scroll 9s linear infinite;
+  /* Current: 5s (faster continuous) | Previous: 9s */
+  animation: scroll 10s linear infinite;
   will-change: transform;
 }
 

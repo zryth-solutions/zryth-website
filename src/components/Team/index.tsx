@@ -73,6 +73,13 @@ const teamData: TeamType[] = [
     image: "https://i.postimg.cc/MKcL4sRd/rishabhi.jpg",
     linkedinLink: "https://www.linkedin.com/in/rishav-sisodiya-a64633294/",
   },
+  {
+    id: 11,
+    name: "Tanaya Pawar",
+    designation: "UI/UX Designer",
+    image: "https://i.postimg.cc/fWS97qp5/IMG-0081-modified.png",
+    linkedinLink: "https://www.linkedin.com/in/tanayapawar12/",
+  },
 
 ];
 
