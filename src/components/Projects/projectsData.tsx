@@ -2,15 +2,8 @@ import { Project } from "@/types/project";
 
 // Project image paths - organized at the top for easy maintenance
 const PROJECT_IMAGES = {
-  FLIGHT_BOOKING_WEBSITE: "/images/Projects/Flight_Booking_Website.jpg",
-  AI_TRIP_PLANNER: "/images/Projects/AI_Trip_Planner.jpg",
-  AGENTIC_AI_CAB_BOOKING: "/images/Projects/Agentic_AI_Cab_Booking.png",
   CRM_CHARTERED_ACCOUNTANTS: "/images/Projects/CRM_for_Chartered_Accountants.png",
-  AI_INVENTORY_MANAGEMENT: "/images/Projects/AI_Inventory_Management.png",
-  CHILD_SURVEILLANCE_APP: "/images/Projects/Child_Surveillance_App.png",
   JOB_FINDING_PORTAL: "/images/Projects/Job_Finding_Portal.png",
-  PROJECT_MANAGEMENT_SOFTWARE: "/images/Projects/Project_Management_Software.png",
-  FLIGHT_BOOKING_CRM: "/images/Projects/Flight_Booking_CRM.png",
 };
 
 const projectsData: Project[] = [
@@ -38,7 +31,7 @@ const projectsData: Project[] = [
   },
   {
     id: 2,
-    icon: PROJECT_IMAGES.AGENTIC_AI_CAB_BOOKING,
+    icon: "https://ik.imagekit.io/bdq0hopvw/Box%20Inventory-20251209T135643Z-3-001/Box%20Inventory/Pictures/Screenshot%20from%202025-12-09%2018-46-05.png?updatedAt=1765288750631",
     title: "Box Inventory",
     category: "AI Agents & Automation",
     paragraph: "Intelligent customer support agent that handles complex queries, provides instant responses, and escalates issues seamlessly while maintaining brand voice consistency.",
@@ -52,15 +45,15 @@ const projectsData: Project[] = [
   },
   {
     id: 6,
-    icon: PROJECT_IMAGES.CHILD_SURVEILLANCE_APP,
+    icon: "https://ik.imagekit.io/bdq0hopvw/Mill%20Software-20251209T135732Z-3-001/Mill%20Software/Pictures/Screenshot%20from%202025-12-09%2018-49-43.png?updatedAt=1765288726020",
     title: "Mill Software",
     category: "AI Agents & Process",
     paragraph: "Intelligent workflow automation agent that handles complex business processes, manages approvals, and optimizes operations across multiple departments.",
   },
   {
     id: 7,
-    icon: PROJECT_IMAGES.FLIGHT_BOOKING_CRM,
-    title: "AI QC",
+    icon: "https://ik.imagekit.io/bdq0hopvw/QC%20Product-20251209T135741Z-3-001/QC%20Product/Photos/Screenshot%20from%202025-12-09%2019-08-24.png?updatedAt=1765288710241",
+    title: "AI QC Product",
     category: "AI Agents & Analytics",
     paragraph: "Intelligent data analysis agent that processes large datasets, identifies patterns, and generates actionable business intelligence reports automatically.",
   },
