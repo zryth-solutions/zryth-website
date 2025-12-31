@@ -14,6 +14,7 @@ const industryMap: Record<string, Industry> = {
   education: "Education",
   finance: "Finance",
   manufacturing: "Manufacturing",
+  healthcare: "Healthcare",
   pharma: "Pharma",
   business: "Business",
 };

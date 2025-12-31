@@ -1,4 +1,4 @@
-export type Industry = "Education" | "Finance" | "Manufacturing" | "Pharma" | "Business";
+export type Industry = "Education" | "Finance" | "Manufacturing" | "Pharma" | "Business" | "Healthcare";
 
 export type NewsletterItem = {
   id: number;

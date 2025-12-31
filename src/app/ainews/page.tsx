@@ -17,8 +17,12 @@ const industries: { name: Industry; description: string }[] = [
     description: "AI-powered industrial automation and optimization",
   },
   {
+    name: "Healthcare",
+    description: "AI-driven diagnostics and patient care innovations",
+  },
+  {
     name: "Pharma",
-    description: "AI breakthroughs in pharmaceuticals and healthcare",
+    description: "AI breakthroughs in pharmaceuticals and drug discovery",
   },
   {
     name: "Business",

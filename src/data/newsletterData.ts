@@ -71,25 +71,48 @@ export const newsletterData: IndustryNews[] = [
     ],
   },
   {
+    industry: "Healthcare",
+    items: [
+      {
+        id: 1,
+        type: "fact",
+        title: "The Fact",
+        content: "In 2026, 90% of hospitals are adopting AI-driven diagnostics. AI Scribes (like those from Plume IA) are now standard, transcribing doctor-patient talks into structured clinical notes in seconds, saving doctors 3+ hours of paperwork daily.",
+      },
+      {
+        id: 2,
+        type: "stay-ahead",
+        title: "How to Stay Ahead",
+        content: "Shift from 'Reaction' to 'Prevention.' Use Edge AI (wearables) to process patient data locally for real-time alerts on heart or glucose anomalies before they become emergencies.",
+      },
+      {
+        id: 3,
+        type: "policy",
+        title: "Policy/Scheme",
+        content: "Ayushman Bharat Digital Mission (ABDM): Use the ABHA ID ecosystem to access 84+ crore digital health records for seamless, paperless patient history. Centres of Excellence (CoE): The Govt has set up dedicated AI CoEs at AIIMS Delhi, Rishikesh, and PGIMER Chandigarh to help startups pilot clinical-grade AI tools.",
+      },
+    ],
+  },
+  {
     industry: "Pharma",
     items: [
       {
         id: 1,
         type: "fact",
         title: "The Fact",
-        content: "Content will be added manually.",
+        content: "AI has cut drug discovery timelines by 50%. By 2026, 30% of new drug pipelines are expected to originate from AI platforms that design 'non-natural' proteins to target rare diseases.",
       },
       {
         id: 2,
         type: "stay-ahead",
         title: "How to Stay Ahead",
-        content: "Content will be added manually.",
+        content: "Adopt AI-Augmented Validation. Replace traditional manual testing with automated, blockchain-backed data trails to ensure real-time compliance and faster FDA/CDSCO approvals.",
       },
       {
         id: 3,
         type: "policy",
         title: "Policy/Scheme",
-        content: "Content will be added manually.",
+        content: "PRIP Scheme: The ₹5,000 Cr 'Promotion of Research and Innovation in Pharma' specifically funds AI-driven drug discovery and biotech-AI convergence. PLI Scheme (Pharmaceuticals): Offers incentives on incremental sales for high-value goods like biopharmaceuticals and complex generics built using advanced tech. Bulk Drug Parks: Access world-class 'plug-and-play' infrastructure in Gujarat, AP, and Himachal to reduce API manufacturing costs by 20-30%.",
       },
     ],
   },
