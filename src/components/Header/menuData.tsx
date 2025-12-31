@@ -21,12 +21,18 @@ const menuData: Menu[] = [
   },
   {
     id: 4,
+    title: "AI News",
+    path: "/ainews",
+    newTab: false,
+  },
+  {
+    id: 5,
     title: "Careers",
     path: "/careers",
     newTab: false,
   },
   {
-    id: 5,
+    id: 6,
     title: "Contact",
     path: "/#contact",
     newTab: false,

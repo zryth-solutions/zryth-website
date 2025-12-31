@@ -10,22 +10,22 @@ const SingleClient = ({ client }: { client: Client }) => {
       <Link href={link} target="_blank" rel="nofollow noopner">
         {showTextWithLogo ? (
           // Logo + Text Layout (for clients like Agra Rollers, Triwize, Oswaal, Dimple Collection)
-          <div className="flex items-center gap-3 h-[40px]">
+          <div className="flex items-center gap-3 h-[200px]">
             <Image
               src={logo}
               alt={title}
               className="dark:hidden"
-              width={50}
-              height={50}
+              width={75}
+              height={75}
             />
             <Image
               src={logoWhite}
               alt={title}
               className="hidden dark:block"
-              width={40}
-              height={40}
+              width={60}
+              height={60}
             />
-            <span className="text-base font-semibold text-dark dark:text-white whitespace-nowrap">
+            <span className="text-lg font-semibold text-dark dark:text-white whitespace-nowrap">
               {title}
             </span>
           </div>
@@ -36,15 +36,15 @@ const SingleClient = ({ client }: { client: Client }) => {
               src={logo}
               alt={title}
               className="dark:hidden"
-              width={140}
-              height={40}
+              width={200}
+              height={60}
             />
             <Image
               src={logoWhite}
               alt={title}
               className="hidden dark:block"
-              width={140}
-              height={40}
+              width={200}
+              height={60}
             />
           </>
         )}

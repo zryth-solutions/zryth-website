@@ -100,8 +100,8 @@ body {
 
 .animate-scroll {
   /* Speed control: Lower number = faster, Higher number = slower */
-  /* Current: 5s (faster continuous) | Previous: 9s */
-  animation: scroll 10s linear infinite;
+  /* Current: 30s (slower continuous) | Previous: 10s */
+  animation: scroll 30s linear infinite;
   will-change: transform;
 }
 
