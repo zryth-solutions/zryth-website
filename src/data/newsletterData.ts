@@ -158,7 +158,7 @@ export const newsletterData: IndustryNews[] = [
         id: 3,
         type: "policy",
         title: "Companies to Root For",
-        content: "[NVIDIA](https://www.nvidia.com/en-us/ai/): Leading AI infrastructure and chipsets. [Google](https://ai.google/): Gemini ecosystem and enterprise AI. [Grok (xAI)](https://x.ai/): Emerging conversational AI platform. [Physical Intelligence](https://www.physicalintelligence.company/): Robotics and embodied AI. SIM2: Simulation and digital twin technology.",
+        content: "[NVIDIA](https://www.nvidia.com/en-us/ai/): Leading AI infrastructure and chipsets. [Google](https://ai.google/): Gemini ecosystem and enterprise AI. [Grok (xAI)](https://x.ai/): Emerging conversational AI platform. [Robotics and Chinese AI](https://humanoidroboticstechnology.com/articles/top-10-chinese-humanoid-robots-of-2025/): Robotics and embodied AI. SIM2: Simulation and digital twin technology.",
       },
     ],
   },
