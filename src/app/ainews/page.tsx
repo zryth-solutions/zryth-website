@@ -28,6 +28,10 @@ const industries: { name: Industry; description: string }[] = [
     name: "Business",
     description: "AI solutions for enterprise operations and growth",
   },
+  {
+    name: "AI Hots",
+    description: "Essential AI tools, updates, and companies to watch",
+  },
 ];
 
 export default function AINewsPage() {
@@ -49,7 +53,7 @@ export default function AINewsPage() {
               {industries.map((industry) => (
                 <Link
                   key={industry.name}
-                  href={`/ainews/${industry.name.toLowerCase()}`}
+                  href={`/ainews/${industry.name === "AI Hots" ? "ai-hots" : industry.name.toLowerCase()}`}
                   className="group block rounded-lg border border-stroke bg-white p-6 transition-all hover:border-primary hover:shadow-sm dark:border-dark-3 dark:bg-dark-2"
                 >
                   <div className="flex items-center justify-between">

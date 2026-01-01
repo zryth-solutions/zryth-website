@@ -17,6 +17,7 @@ const industryMap: Record<string, Industry> = {
   healthcare: "Healthcare",
   pharma: "Pharma",
   business: "Business",
+  "ai-hots": "AI Hots",
 };
 
 export default async function IndustryNewsPage({ params }: IndustryPageProps) {
