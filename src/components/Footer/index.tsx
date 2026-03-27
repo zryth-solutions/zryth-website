@@ -151,10 +151,10 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/terms-and-conditions"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
-                    Terms of Service
+                    Terms and Conditions
                   </Link>
                 </li>
                 <li>
@@ -225,7 +225,7 @@ const Footer = () => {
                     Privacy policy
                   </Link>
                   <Link
-                    href="#"
+                    href="/terms-and-conditions"
                     className="px-3 text-base text-gray-7 hover:text-white hover:underline"
                   >
                     Terms of service
