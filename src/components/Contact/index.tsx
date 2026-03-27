@@ -135,10 +135,10 @@ const Contact = () => {
                     </h3>
                     <p className="text-base text-body-color dark:text-dark-6">
                       <a
-                        href="mailto:contact@zryth.com"
+                        href="mailto:kushagra@zryth.com,manas@zryth.com"
                         className="hover:text-primary transition-colors"
                       >
-                        contact@zryth.com
+                        kushagra@zryth.com manas@zryth.com
                       </a>
                     </p>
                   </div>
