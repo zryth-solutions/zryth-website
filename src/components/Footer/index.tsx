@@ -217,26 +217,6 @@ const Footer = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-2/3 lg:w-1/2">
               <div className="my-1">
-                <div className="-mx-3 flex items-center justify-center md:justify-start">
-                  <Link
-                    href="#"
-                    className="px-3 text-base text-gray-7 hover:text-white hover:underline"
-                  >
-                    Privacy policy
-                  </Link>
-                  <Link
-                    href="#"
-                    className="px-3 text-base text-gray-7 hover:text-white hover:underline"
-                  >
-                    Legal notice
-                  </Link>
-                  <Link
-                    href="#"
-                    className="px-3 text-base text-gray-7 hover:text-white hover:underline"
-                  >
-                    Terms of service
-                  </Link>
-                </div>
               </div>
             </div>
             <div className="w-full px-4 md:w-1/3 lg:w-1/2">
