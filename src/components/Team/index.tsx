@@ -80,6 +80,34 @@ const teamData: TeamType[] = [
     image: "https://i.postimg.cc/fWS97qp5/IMG-0081-modified.png",
     linkedinLink: "https://www.linkedin.com/in/tanayapawar12/",
   },
+  {
+    id: 12,
+    name: "Dev Athwani",
+    designation: "Full stack developer",
+    image: "https://i.postimg.cc/26KBbcph/75453-modified.png",
+    linkedinLink: " https://www.linkedin.com/in/dev-athwani-543816279/",
+  },
+  {
+    id: 13,
+    name: "Neha V",
+    designation: "Content Writer",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQF6JTrH95lIGw/profile-displayphoto-shrink_400_400/B56ZXteFwBHoAo-/0/1743445843886?e=1776297600&v=beta&t=qW6asutDD-RAG2X58R4B-0NRj0jU3s1356qVMQITEM8",
+    linkedinLink: "https://www.linkedin.com/in/neha-v-7a01aa290/",
+  },
+  {
+    id: 14,
+    name: "Vanshika Singh",
+    designation: "Quality Test Engineer",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQF8kg9UqBCr8Q/profile-displayphoto-scale_400_400/B56ZfeAYa5GoAg-/0/1751776335279?e=1776297600&v=beta&t=mDRyOjOKfI8MVVZbkTxZwoOkEWfwruR4nSiwevv1zR8",
+    linkedinLink: "https://www.linkedin.com/in/vanshika-singh-9b3b1a290/",
+  },
+  {
+    id: 15,
+    name: "Kuldeep",
+    designation: "Full stack developer",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQGEc9X5dLQGHA/profile-displayphoto-shrink_400_400/B56Zf5_xorHQAk-/0/1752245936957?e=1776297600&v=beta&t=wpeM8u84DqrvX8vT2cxE4-cvkz-J7uWBTYKmEEBPtuM",
+    linkedinLink: "https://www.linkedin.com/in/kuldeeplodi919/",
+  },
 
 ];
 
