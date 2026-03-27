@@ -90,7 +90,7 @@ const teamData: TeamType[] = [
   {
     id: 13,
     name: "Neha V",
-    designation: "Content Writer",
+    designation: "Content Creator",
     image: "https://media.licdn.com/dms/image/v2/D5603AQF6JTrH95lIGw/profile-displayphoto-shrink_400_400/B56ZXteFwBHoAo-/0/1743445843886?e=1776297600&v=beta&t=qW6asutDD-RAG2X58R4B-0NRj0jU3s1356qVMQITEM8",
     linkedinLink: "https://www.linkedin.com/in/neha-v-7a01aa290/",
   },
