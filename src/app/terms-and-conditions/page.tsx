@@ -1,6 +1,5 @@
 import { Metadata } from "next";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+
 import TermsContent from "@/components/TermsAndConditions/TermsContent";
 import { termsAndConditionsData } from "@/data/termsAndConditionsData";
 
@@ -13,16 +12,12 @@ export default function TermsAndConditionsPage() {
   const { content } = termsAndConditionsData;
 
   return (
-    <>
-      <Header />
-      <main className="min-h-screen bg-white">
-        <div className="container mx-auto px-4 py-20">
-          <div className="max-w-4xl mx-auto">
-            <TermsContent content={content} />
-          </div>
+    <main className="min-h-screen bg-white">
+      <div className="container mx-auto px-4 py-20">
+        <div className="max-w-4xl mx-auto">
+          <TermsContent content={content} />
         </div>
-      </main>
-      <Footer />
-    </>
+      </div>
+    </main>
   );
 }

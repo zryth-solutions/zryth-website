@@ -95,72 +95,32 @@ const Header = () => {
               >
                 {pathUrl === "/careers" && !sticky ? (
                   <>
-                    <svg
-                      width="200"
-                      height="60"
-                      viewBox="0 0 200 60"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <Image
+                      src="/images/logo/Zryth_Main_Logo_White_Text.png"
+                      alt="Zryth"
+                      width={140}
+                      height={30}
                       className="header-logo w-full dark:hidden"
-                    >
-                      <circle
-                        cx="30"
-                        cy="30"
-                        r="25"
-                        stroke="#4285F4"
-                        strokeWidth="5"
-                        fill="none"
-                      />
-                      <text
-                        x="70"
-                        y="42"
-                        fontFamily="Arial, sans-serif"
-                        fontSize="36"
-                        fontWeight="bold"
-                        fill="white"
-                      >
-                        ZRYTH
-                      </text>
-                    </svg>
-                    <svg
-                      width="200"
-                      height="60"
-                      viewBox="0 0 200 60"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
+                    />
+                    <Image
+                      src="/images/logo/Zryth_Main_Logo_White_Text.png"
+                      alt="Zryth"
+                      width={140}
+                      height={30}
                       className="header-logo hidden w-full dark:block"
-                    >
-                      <circle
-                        cx="30"
-                        cy="30"
-                        r="25"
-                        stroke="#4285F4"
-                        strokeWidth="5"
-                        fill="none"
-                      />
-                      <text
-                        x="70"
-                        y="42"
-                        fontFamily="Arial, sans-serif"
-                        fontSize="36"
-                        fontWeight="bold"
-                        fill="white"
-                      >
-                        ZRYTH
-                      </text>
-                    </svg>
+                    />
                   </>
                 ) : pathUrl !== "/" ? (
                   <>
                     <Image
-                      src={`/images/logo/zryth-logo-dark.svg`}
+                      src={`/images/logo/Zryth_Main_Logo.png`}
                       alt="Zryth"
                       width={240}
                       height={30}
                       className="header-logo w-full dark:hidden"
                     />
                     <Image
-                      src={`/images/logo/zryth-logo.svg`}
+                      src={`/images/logo/Zryth_Main_Logo_White_Text.png`}
                       alt="Zryth"
                       width={240}
                       height={30}
@@ -171,8 +131,8 @@ const Header = () => {
                   <>
                     <Image
                       src={`${sticky
-                        ? "/images/logo/zryth-logo-dark.svg"
-                        : "/images/logo/zryth-logo.svg"
+                        ? "/images/logo/Zryth_Main_Logo.png"
+                        : "/images/logo/Zryth_Main_Logo_White_Text.png"
                         }`}
                       alt="Zryth"
                       width={140}
@@ -181,8 +141,8 @@ const Header = () => {
                     />
                     <Image
                       src={`${sticky
-                        ? "/images/logo/zryth-logo-dark.svg"
-                        : "/images/logo/zryth-logo.svg"
+                        ? "/images/logo/Zryth_Main_Logo.png"
+                        : "/images/logo/Zryth_Main_Logo_White_Text.png"
                         }`}
                       alt="Zryth"
                       width={140}
@@ -286,14 +246,14 @@ const Header = () => {
                   <div className="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-dark-2">
                     <Link href="/" onClick={() => setNavbarOpen(false)}>
                       <Image
-                        src="/images/logo/zryth-logo-dark.svg"
+                        src="/images/logo/Zryth_Main_Logo.png"
                         alt="Zryth"
                         width={120}
                         height={24}
                         className="dark:hidden"
                       />
                       <Image
-                        src="/images/logo/zryth-logo.svg"
+                        src="/images/logo/Zryth_Main_Logo_White_Text.png"
                         alt="Zryth"
                         width={120}
                         height={24}

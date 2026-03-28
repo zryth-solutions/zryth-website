@@ -12,9 +12,9 @@
   "categories": ["business", "productivity", "technology"],
   "icons": [
     {
-      "src": "/images/logo/zryth-logo.svg",
+      "src": "/images/logo/Zryth_Main_Logo_White_Text.png",
       "sizes": "any",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "any maskable"
     },
     {
@@ -31,9 +31,9 @@
       "url": "/services",
       "icons": [
         {
-          "src": "/images/logo/zryth-logo.svg",
+          "src": "/images/logo/Zryth_Main_Logo_White_Text.png",
           "sizes": "96x96",
-          "type": "image/svg+xml"
+          "type": "image/png"
         }
       ]
     },
@@ -44,9 +44,9 @@
       "url": "/contact",
       "icons": [
         {
-          "src": "/images/logo/zryth-logo.svg",
+          "src": "/images/logo/Zryth_Main_Logo_White_Text.png",
           "sizes": "96x96",
-          "type": "image/svg+xml"
+          "type": "image/png"
         }
       ]
     }
