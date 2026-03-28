@@ -14,7 +14,7 @@ const Footer = () => {
             <div className="mb-10 w-full">
               <Link href="/" className="mb-6 inline-block max-w-[160px]">
                 <Image
-                  src="/images/logo/zryth_logo_footer.svg"
+                  src="/images/logo/Zryth_Main_Logo_White_Text.png"
                   alt="Zryth"
                   width={140}
                   height={30}
@@ -184,7 +184,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="#"
+                    href="/ainews"
                     className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
                   >
                     Blogs
@@ -228,7 +228,7 @@ const Footer = () => {
                     href="/terms-and-conditions"
                     className="px-3 text-base text-gray-7 hover:text-white hover:underline"
                   >
-                    Terms of service
+                    Terms & Conditions
                   </Link>
                 </div>
               </div>

@@ -155,7 +155,7 @@ export default function TermsContent({ content }: { content: string }) {
     <div className="prose prose-lg max-w-none">
       {titleBlock && (
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">TERMS AND CONDITIONS</h1>
+          <h1 className="text-2xl font-bold text-gray-900 mb-4">TERMS AND CONDITIONS</h1>
           {titleBlock
             .split("\n")
             .slice(1)

@@ -165,7 +165,7 @@ export default function PolicyContent({ content }: { content: string }) {
     <div className="prose prose-lg max-w-none">
       {titleBlock && (
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">PRIVACY POLICY</h1>
+          <h1 className="text-2xl font-bold text-gray-900 mb-4">PRIVACY POLICY</h1>
           {titleBlock
             .split("\n")
             .slice(1)
